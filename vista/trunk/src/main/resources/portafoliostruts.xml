@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="Portafolio" namespace="/" extends="struts-default,json-default">
+
+        <action name="Portafolio_*" method="{1}" class="ve.com.vbtonline.vista.action.portafolio.PortafolioAction">
+            <result name="input">/jsp/portafolio/Portafolio.jsp</result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,portafolioServicio,data</param>
+                /jsp/portafolio/Portafolio.jsp
+            </result>
+        </action>
+
+        <!-- Add actions here -->
+    </package>
+</struts>

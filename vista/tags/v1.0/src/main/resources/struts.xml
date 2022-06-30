@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.objectFactory" value="spring"/>
+    <constant name="struts.configuration.xml.reload" value="false"/>
+    <constant name="struts.freemarker.templatesCache" value="true"/>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <constant name="struts.ui.theme" value="simple"/>
+    <constant name="struts.locale" value="es_ve"/>
+    <constant name="struts.tag.altSyntax" value="true"/>
+    <constant name="struts.convention.action.packages" value="com.jgeppert.struts2.jquery.grid.showcase.action"/>
+    <constant name="struts.convention.default.parent.package" value="showcase"/>
+
+    <include file="loginstruts.xml"/>
+    <include file="backofficestruts.xml"/>
+    <include file="accountsstruts.xml"/>
+    <include file="desingBanksstruts.xml"/>
+    <include file="allMyPortafoliostruts.xml"/>
+    <include file="creditCardsstruts.xml"/>
+    <include file="mutualFundsstruts.xml"/>
+    <include file="otherInvestmentsstruts.xml"/>
+    <include file="myInformationstruts.xml"/>
+    <include file="portafoliostruts.xml"/>
+    <include file="securitystruts.xml"/>
+    <include file="timeDepositsstruts.xml"/>
+    <include file="transfersstruts.xml"/>
+    <include file="reportsPdfStruts.xml"/>
+    <include file="firmasConjuntasstruts.xml"/>
+    <include file="clientInstructionStruts.xml"/>
+    <include file="securityCardStruts.xml"/>
+
+    <package name="default" namespace="/" extends="struts-default">
+        <default-action-ref name="index" />
+        <action name="index">
+            <result type="redirectAction">
+                <param name="actionName">Login</param>
+                <param name="namespace">/</param>
+            </result>
+        </action>
+    </package>
+
+
+
+    <!-- Add packages here -->
+
+</struts>

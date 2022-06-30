@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="MyInformation" namespace="/" extends="struts-default,json-default">
+
+        <action name="MyInformation_*" method="{1}" class="ve.com.vbtonline.vista.action.myInformation.MyInformationAction">
+            <result name="input">/jsp/myInformation/MyInformation.jsp</result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,myInformationServicio,data</param>
+                /jsp/myInformation/MyInformation.jsp
+            </result>
+        </action>
+
+        <action name="MyInformation_cargarMiInformacion" method="cargarMiInformacion" class="ve.com.vbtonline.vista.action.myInformation.MyInformationAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,myInformationServicio,data</param>
+            </result>
+        </action>
+
+        <!-- Add actions here -->
+    </package>
+</struts>

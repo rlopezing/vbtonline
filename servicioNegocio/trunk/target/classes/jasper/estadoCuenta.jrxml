@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="estadoCuenta" pageWidth="612" pageHeight="793" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4b704899-cf24-4d10-a058-6c948e4b9f37">
+	<property name="ireport.zoom" value="4.594972986357227"/>
+	<property name="ireport.x" value="1789"/>
+	<property name="ireport.y" value="1870"/>
+	<property name="ireport.background.image.properties" value="false,true,1.0,0,0,0,0,0,0"/>
+	<parameter name="COD_CAR" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0000007411"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="COD_EMP" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0000040843"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="MONEDA" class="java.lang.String">
+		<defaultValueExpression><![CDATA["USD"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="RAZON" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Venecredit Euro Fund"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="FECHA" class="java.lang.String">
+		<defaultValueExpression><![CDATA["30/06/2012"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_FUND" class="java.lang.String">
+		<defaultValueExpression><![CDATA["VBT HOLDINGS, LTD."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_HOLDER" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Unitholder(s):"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_INVERSIONISTA" class="java.lang.String">
+		<defaultValueExpression><![CDATA["CORONEL ALEGRE MARLON DAVID"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_DIRENVIO" class="java.lang.String">
+		<defaultValueExpression><![CDATA["HOLD MAIL"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_TOTALBALANCE" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Total Balance (in Units)"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_GARANTIA" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Units Given in Guarantee"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_DISPONIBLE" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Units Avalaible"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_NAV" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N.A.V."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_BALANCE" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Balance (In Currency)"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_REINVESTMENT" class="java.lang.String">
+		<defaultValueExpression><![CDATA["REINVESTMENT"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_PIEPAG" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Please review and report any discrepancies to our auditors KPMG, P.O. Box 493 GT, Grand Cayman, Cayman Islands, KY1-1106 (to the attention of Curran Patel [phone +1 345 914 44 22] / Angelica Lejarde [phone +1 345 914 43 62]), or alternately, you could communicate any exceptions by email to curranpatel1@kpmg.ky /alejarde@kpmg.ky."]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_NUMBERUNITS1" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Number of Units"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_TOTALBALANCE" class="java.lang.String">
+		<defaultValueExpression><![CDATA["272.553,16000000"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_GARANTIA" class="java.lang.String">
+		<defaultValueExpression><![CDATA["49,540000"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_DISPONIBLE" class="java.lang.String">
+		<defaultValueExpression><![CDATA["223,62000000"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_NAV" class="java.lang.String">
+		<defaultValueExpression><![CDATA["1.015,140000"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_BALANCE" class="java.lang.String">
+		<defaultValueExpression><![CDATA["227.295,64"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_MONEDA" class="java.lang.String">
+		<defaultValueExpression><![CDATA["USD"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_FECHAOPE" class="java.lang.String">
+		<defaultValueExpression><![CDATA["31/12/2000"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_CODACC" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0000000563"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_NUMBERUNITS3" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Redeemed"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_FECHAVAL" class="java.lang.String">
+		<defaultValueExpression><![CDATA["01/01/2000"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_NUMBERUNITS2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Subscribed"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SALDO" class="java.lang.String">
+		<defaultValueExpression><![CDATA["60000.929000"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ETIQ_VENECREDIT" class="java.lang.String">
+		<defaultValueExpression><![CDATA["VENECREDIT"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ENCAB_CUENTAEJECUTIVO" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0000061527"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IMAGENFONDO" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="DIVIDENDO" class="java.lang.String">
+		<defaultValueExpression><![CDATA["USD 14,01 X 1"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="MES_CONDICION" class="java.lang.String">
+		<defaultValueExpression><![CDATA["SI"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CANT_DECIMALES" class="java.lang.String">
+		<defaultValueExpression><![CDATA["8"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="plsql">
+		<![CDATA[{CALL PCK_FONDO_MUTUAL.VBT_ESTADO_CUENTA_FONDOS_PDF($P{COD_EMP},$P{COD_CAR},$P{FECHA},$P{RAZON},$P{MONEDA},$P{ORACLE_REF_CURSOR})}]]>
+	</queryString>
+	<field name="CONCIRIF" class="java.lang.String"/>
+	<field name="INVERSIONISTA" class="java.lang.String"/>
+	<field name="DIRENVIO" class="java.lang.String"/>
+	<field name="CODCAR" class="java.lang.String"/>
+	<field name="CODEMP" class="java.lang.String"/>
+	<field name="CODACC" class="java.lang.String"/>
+	<field name="MONEDA" class="java.lang.String"/>
+	<field name="CODEJE" class="java.lang.String"/>
+	<field name="NOMBEJE" class="java.lang.String"/>
+	<field name="NUMACCGAR" class="java.lang.String"/>
+	<field name="NUMACCDISP" class="java.lang.String"/>
+	<field name="SALDO_UNI_ANT" class="java.lang.String"/>
+	<field name="PRECIO_VUI" class="java.lang.String"/>
+	<field name="FECHOPE" class="java.lang.String"/>
+	<field name="FECHVAL" class="java.lang.String"/>
+	<field name="NOMBTIPO" class="java.lang.String"/>
+	<field name="NOMBTIPOING" class="java.lang.String"/>
+	<field name="MTOINV" class="java.lang.String"/>
+	<field name="PRECUNI" class="java.lang.String"/>
+	<field name="NUMUNI" class="java.lang.String"/>
+	<field name="TIPOPE" class="java.lang.String"/>
+	<field name="CODTIPO" class="java.lang.String"/>
+	<field name="SIGNOTIPO" class="java.lang.String"/>
+	<field name="FECHA_VUI" class="java.lang.String"/>
+	<field name="CODEMP_A" class="java.lang.String"/>
+	<field name="FLGREINV" class="java.lang.String"/>
+	<field name="RAZCOMER" class="java.lang.String"/>
+	<field name="NUMACC" class="java.lang.String"/>
+	<field name="PRECIO_VUI_EXT" class="java.lang.String"/>
+	<field name="CODOPE" class="java.lang.String"/>
+	<field name="FLGEXTRT" class="java.lang.String"/>
+	<field name="FECHA_FIN_MES" class="java.lang.String"/>
+	<field name="ACC_SECUNDARIO" class="java.lang.String"/>
+	<variable name="sumaUnits" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[Double.parseDouble($F{NUMUNI})]]></variableExpression>
+	</variable>
+	<variable name="sumaTotal" class="java.lang.Double">
+		<variableExpression><![CDATA[Double.parseDouble($P{SALDO})+$V{sumaUnits}]]></variableExpression>
+	</variable>
+	<background>
+		<band height="790" splitType="Stretch">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+			<image>
+				<reportElement mode="Transparent" x="0" y="0" width="611" height="790" forecolor="#000000" uuid="965bd120-1d44-47a8-a2ba-621c943b698f"/>
+				<imageExpression><![CDATA[$P{IMAGENFONDO}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="345" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="49" y="120" width="526" height="30" uuid="edad1c8b-fce6-4a4d-a00d-46f144d849df"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="17" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_FUND}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="49" y="150" width="106" height="22" uuid="7ad82b86-85b6-46d6-9624-4a0d00a20ce9"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_HOLDER}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="49" y="101" width="235" height="26" uuid="be36af75-727a-4af8-b6f4-050f980f5a14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="17" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_VENECREDIT}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="49" y="162" width="203" height="104" uuid="40f20512-a270-42c9-88a9-87bfcba013af"/>
+				<textElement markup="html">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ENCAB_INVERSIONISTA}+"<br><br>"+$P{ENCAB_DIRENVIO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="437" y="148" width="188" height="23" uuid="7041987d-bad9-4949-afa9-91345ec3b4a3"/>
+				<textElement>
+					<font fontName="SansSerif" size="14" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Statement of Holdings]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="218" width="84" height="11" uuid="65c684e8-5c9d-4a56-b072-cef739c28e6f"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[Account Executive:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="198" width="65" height="11" uuid="f664c31d-3452-42ae-9791-23872a09e617"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[Through:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="539" y="198" width="100" height="11" uuid="5899ac7c-6db8-424f-92df-512136d22533"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ENCAB_FECHAOPE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="438" y="188" width="65" height="11" uuid="c4c26637-43d4-4ea4-ba4f-467b65993d70"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[For period:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="539" y="188" width="100" height="11" uuid="c30d231e-3a31-4475-b8e2-c95fe56eabf9"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{FECHA}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="438" y="178" width="65" height="11" uuid="675452b3-54f3-4dea-aa74-d079f4a69415"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[Identification No.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="168" width="65" height="11" uuid="dddedacb-de5b-40bf-a455-004c8a4e0078"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[Client Id.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="208" width="65" height="11" uuid="3bda052c-dd56-4707-b585-1b9bfda8dff6"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<text><![CDATA[Currency:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="539" y="178" width="100" height="11" uuid="3969bde3-f4a7-4449-8107-882261bc4e14"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ENCAB_CODACC}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="539" y="168" width="100" height="11" uuid="3152fe13-936b-43b9-b19f-6d1d09d31f9d"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{COD_CAR}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="539" y="208" width="100" height="11" uuid="aa8ac8b1-a6e8-4e92-82ef-e767c9c33bbe"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{MONEDA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="64" y="318" width="85" height="25" uuid="1bc86d5d-c49e-4c9c-823c-68fd19a0ed43"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ENCAB_TOTALBALANCE}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="48" y="286" width="548" height="30" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="aca44f31-2b40-4730-82e2-9af12b6cf43d"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="305" y="319" width="85" height="25" uuid="57b00c2d-db3d-4936-b5d5-eaaef9bfc34d"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ENCAB_DISPONIBLE}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="177" y="287" width="75" height="30" uuid="9ed7d599-e7cd-4ca1-af45-6ebc555eeeac"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_GARANTIA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="192" y="318" width="85" height="25" uuid="cff85131-7be2-45ae-a7e8-b6b27d6e0372"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ENCAB_GARANTIA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="418" y="319" width="84" height="25" uuid="05d4baf4-1acc-48c3-845d-30983c6acf7b"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ENCAB_NAV}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="510" y="319" width="84" height="25" uuid="38f7c653-4dc1-4982-a972-adf7a3e9b26f"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ENCAB_BALANCE}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="520" y="286" width="68" height="30" uuid="d48af63d-da11-443d-8c3a-56fe2cd132a5"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_BALANCE}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="299" y="286" width="75" height="30" uuid="36729276-b13f-4657-a03f-04a9ba08e3ac"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_DISPONIBLE}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="287" width="75" height="30" uuid="e6fb5267-de2a-4971-b8db-5765bd7f819d"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_TOTALBALANCE}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="423" y="286" width="75" height="30" uuid="8199581e-fe52-4826-97d7-35768758d7ce"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_NAV}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="539" y="218" width="100" height="11" uuid="20d687f4-807d-4a1f-8ef4-6a494651d25c"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ENCAB_CUENTAEJECUTIVO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="109">
+			<staticText>
+				<reportElement x="160" y="97" width="100" height="12" uuid="d4f8a4c2-0d03-45d2-b7ff-313ba3176771"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Balance Brought Forward]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="498" y="97" width="95" height="12" uuid="0f62afd6-ab47-4d14-aad3-6f3d6729883c"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($V{PAGE_NUMBER}==1)?new DecimalFormat("#,##0.000000").format(Double.parseDouble($P{SALDO})):new DecimalFormat("#,##0.000000").format($V{sumaTotal})]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="52" y="0" width="352" height="66" isRemoveLineWhenBlank="true" uuid="c1352de8-1607-46d7-90ce-89e6d7685612">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}>1]]></printWhenExpression>
+				</reportElement>
+			</frame>
+			<rectangle>
+				<reportElement x="47" y="66" width="548" height="30" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="439dcff4-a9b7-49df-9608-da9c4015cae9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="52" y="67" width="36" height="25" uuid="f1278d7d-9341-41f8-a8d6-3aab601c0179"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Trade Date]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="397" y="80" width="53" height="11" uuid="e853f6bb-d70c-404d-8d3e-081f76127c26"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_NUMBERUNITS2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="397" y="67" width="86" height="12" uuid="d6a3268c-f1ef-4036-ae92-ecb94e3cbfe1"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_NUMBERUNITS1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="248" y="80" width="55" height="13" uuid="73a5d28a-a9d1-4fe6-8c7d-db9905dfd2ae"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[(In Currency)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="249" y="67" width="53" height="13" uuid="1f299e9c-0ec4-4ea4-b403-a76da2f2ec19"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[ Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="80" width="66" height="11" uuid="62ee635a-96b5-45d0-a81d-9546087a0a4c">
+					<printWhenExpression><![CDATA[(!$F{CODEMP}.equals("0000062901")) && (!$F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Net Asset Value]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="67" width="31" height="25" uuid="0cca4595-bcbe-43c8-93fe-51882f243277"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Settle            Date]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="466" y="80" width="45" height="11" uuid="b55a1f95-d51c-4384-9ff5-6620580e6354"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_NUMBERUNITS3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="317" y="67" width="45" height="12" isPrintInFirstWholeBand="true" uuid="17f79bbf-526e-40fe-a7f9-7b5b7a89c160">
+					<printWhenExpression><![CDATA[(!$F{CODEMP}.equals("0000062901")) && (!$F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[N.A.V.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="156" y="74" width="89" height="11" uuid="c4e6288d-fc0b-4e74-99b3-841030f77e44"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Description
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="515" y="68" width="80" height="25" uuid="c8c07d78-5aed-45d1-9592-a7e2888a7bbb">
+					<printWhenExpression><![CDATA[(!$F{CODEMP}.equals("0000062901")) && (!$F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[      Balance Carried         (in Units)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="67" width="63" height="12" isPrintInFirstWholeBand="true" uuid="5abbb031-5cbf-481b-bf09-dec2b54640a9">
+					<printWhenExpression><![CDATA[($F{CODEMP}.equals("0000062901")) || ($F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Market Value]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="515" y="68" width="80" height="25" uuid="8019ede0-027b-47a4-978f-5b29aabf4f4f">
+					<printWhenExpression><![CDATA[($F{CODEMP}.equals("0000062901")) || ($F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[      Balance Carried         (in Shares)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Prevent">
+			<textField isBlankWhenNull="true">
+				<reportElement x="48" y="2" width="50" height="12" uuid="54471d5b-ed7e-4219-8c54-b0a11a1c025f">
+					<printWhenExpression><![CDATA[$F{CONCIRIF}.equals("2")]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FECHOPE}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="494" y="2" width="98" height="12" uuid="25d813ec-2275-4113-bfa5-6c36653da1b1">
+					<printWhenExpression><![CDATA[$F{CONCIRIF}.equals("2")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new DecimalFormat("#,##0.000000").format(Double.valueOf($V{sumaTotal}))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="242" y="2" width="60" height="12" uuid="3fc45336-332f-41fc-b143-44db5e60fcf8">
+					<printWhenExpression><![CDATA[$F{CONCIRIF}.equals("2")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{MTOINV}==null)?"":new DecimalFormat("#,##0.00").format(Double.valueOf($F{MTOINV}))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="424" y="2" width="96" height="12" uuid="ba507517-efd8-46c6-ae34-9a348d2337d2">
+					<printWhenExpression><![CDATA[($F{CONCIRIF}.equals("2")) && ($F{NUMUNI}.charAt(0) == '-')]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CANT_DECIMALES}.equals("6")?new DecimalFormat("#,##0.000000").format(Double.valueOf($F{NUMUNI})).substring(1):new DecimalFormat("#,##0.00000000").format(Double.valueOf($F{NUMUNI})).substring(1)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="325" y="2" width="55" height="12" uuid="750845fd-ce23-47ee-8f7b-70a7c2579224">
+					<printWhenExpression><![CDATA[$F{CONCIRIF}.equals("2")]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{PRECUNI}==null)?"":new DecimalFormat("#,##0.000000").format(Double.valueOf($F{PRECUNI}))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="351" y="2" width="96" height="12" uuid="8088daf6-caaa-4188-904f-af64c44126c7">
+					<printWhenExpression><![CDATA[($F{CONCIRIF}.equals("2")) && ($F{NUMUNI}.charAt(0) != '-')]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CANT_DECIMALES}.equals("6")?new DecimalFormat("#,##0.000000").format(Double.valueOf($F{NUMUNI})):new DecimalFormat("#,##0.00000000").format(Double.valueOf($F{NUMUNI}))]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="144" y="2" width="200" height="12" uuid="fe14d2f5-3374-48d6-8e21-cf5255f04fe8">
+					<printWhenExpression><![CDATA[$F{CONCIRIF}.equals("2")]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NOMBTIPOING}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="2" width="50" height="12" uuid="5e9e3c27-f645-4518-8e82-fc839524b4fe">
+					<printWhenExpression><![CDATA[$F{CONCIRIF}.equals("2")]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FECHVAL}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="14" splitType="Stretch">
+			<textField>
+				<reportElement x="341" y="4" width="78" height="10" forecolor="#FFFFFF" uuid="8d076d12-0928-4b6d-935d-796260b5c269"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{sumaUnits}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="429" y="4" width="100" height="10" forecolor="#FFFFFF" uuid="e8b9dd58-5e82-4352-9a15-3fb410a5d510"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{sumaTotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="174" splitType="Stretch">
+			<staticText>
+				<reportElement x="46" y="100" width="549" height="49" uuid="cbab9515-4d7e-491e-9d5a-7962a2580a0a"/>
+				<textElement>
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<text><![CDATA[VBT Bank & Trust, Ltd.
+2nd Floor, The Harbour Centre. 42 North Church Street. George Town. PO Box 454. Grand Cayman KY1- 1106 Cayman Islands. Phone (345) 949-6917 - Fax (345) 949-8017 - Email: clientservices@vbtbank.com - Website: www.vbtbank.com]]></text>
+			</staticText>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement x="535" y="151" width="40" height="13" uuid="95dfa4ac-2987-4947-9ea9-de2acb311590"/>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["" + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="46" y="1" width="548" height="5" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="dbdec9f6-a3b9-45a6-9745-2ffec7591ef6">
+					<printWhenExpression><![CDATA[(!$F{CODEMP}.equals("0000062901")) && (!$F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+			</rectangle>
+			<line>
+				<reportElement x="45" y="98" width="550" height="1" uuid="31454de6-b148-4a2f-8cef-6988bc25a16e"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="46" y="21" width="71" height="15" uuid="1c431cb9-43f1-47a6-924f-a45c3d9b6447">
+					<printWhenExpression><![CDATA[(!$F{CODEMP}.equals("0000062901")) && (!$F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Option:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="46" y="5" width="71" height="15" uuid="68c84e9a-7656-43b4-ab73-9ea914f5277e">
+					<printWhenExpression><![CDATA[(!$F{CODEMP}.equals("0000062901")) && (!$F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Distributions:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="46" y="40" width="71" height="13" uuid="b2c09436-2ae3-4674-b98a-41d83da943c7">
+					<printWhenExpression><![CDATA[(!$F{CODEMP}.equals("0000062901")) && (!$F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Description:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="485" y="151" width="50" height="13" uuid="29e0aa3d-af4a-4a3c-ab2f-47180d3edc36"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pag. "+$V{PAGE_NUMBER}+"/"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="45" y="55" width="550" height="1" uuid="8eeae2a5-942d-41d5-b8b9-f384972241ae"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="120" y="14" width="126" height="15" uuid="aa4bebcc-efa4-425c-bae8-f2ae18be7e46">
+					<printWhenExpression><![CDATA[(!$F{CODEMP}.equals("0000062901")) && (!$F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_REINVESTMENT}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="46" y="56" width="550" height="40" uuid="fb34ed76-af07-47ae-b8d7-99021da19342">
+					<printWhenExpression><![CDATA[$P{MES_CONDICION}.equals("SI")]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="9" isBold="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETIQ_PIEPAG}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="29" width="85" height="17" uuid="f8d593e3-dff2-4b31-94c9-d7ccf755eb98">
+					<printWhenExpression><![CDATA[(!$F{CODEMP}.equals("0000062901")) && (!$F{CODEMP}.equals("0000087550"))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DIVIDENDO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

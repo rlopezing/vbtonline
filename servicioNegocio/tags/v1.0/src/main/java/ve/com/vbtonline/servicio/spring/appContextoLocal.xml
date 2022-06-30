@@ -1,0 +1,131 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+    <!-- PRODUCCION -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+     <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+     <property name="url" value="jdbc:oracle:thin:@192.168.223.11:1521:vcol"/>
+     <property name="username" value="vbtonline_trans"/>
+     <property name="password" value="vbtonline"/>
+     </bean>
+
+    <!--&lt;!&ndash; DESARROLLO &ndash;&gt;-->
+    <!--<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+        <!--<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>-->
+        <!--<property name="url" value="jdbc:oracle:thin:@192.168.223.91:1521:VCOL"/>-->
+        <!--<property name="username" value="vbtonline_trans"/>-->
+        <!--<property name="password" value="vbtonline"/>-->
+    <!--</bean>-->
+
+    <!-- <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+      <property name="jndiName">
+          <value>java:/vbtonline</value>
+      </property>
+      </bean>
+  -->
+
+
+    <bean id="communDao" class="ve.com.vbtonline.comun.conexiondao.comundao">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="loginIo" scope="prototype" class="ve.com.vbtonline.servicio.io.LoginIo" parent="communDao"/>
+    <bean id="loginServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.home.LoginServicio">
+        <property name="loginIo" ref="loginIo"/>
+    </bean>
+
+    <bean id="backOfficeIo" scope="prototype" class="ve.com.vbtonline.servicio.io.BackOfficeIo" parent="communDao" />
+    <bean id="backOfficeServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.backoffice.BackOfficeServicio">
+        <property name="backOfficeIo" ref="backOfficeIo"/>
+    </bean>
+
+    <bean id="accountsIo" scope="prototype" class="ve.com.vbtonline.servicio.io.AccountsIo" parent="communDao" />
+    <bean id="accountsServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.accounts.AccountsServicio">
+        <property name="accountsIo" ref="accountsIo"/>
+    </bean>
+
+    <bean id="allMyPortafolioIo" scope="prototype" class="ve.com.vbtonline.servicio.io.AllMyPortafolioIo" parent="communDao"/>
+    <bean id="allMyPortafolioServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.allMyPortafolio.AllMyPortafolioServicio">
+        <property name="allMyPortafolioIo" ref="allMyPortafolioIo"/>
+    </bean>
+
+    <bean id="creditCardsIo" scope="prototype" class="ve.com.vbtonline.servicio.io.CreditCardsIo" parent="communDao"/>
+    <bean id="creditCardsServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.creditCards.CreditCardsServicio">
+        <property name="creditCardsIo" ref="creditCardsIo"/>
+    </bean>
+
+    <bean id="mutualFundsIo" scope="prototype" class="ve.com.vbtonline.servicio.io.MutualFundsIo" parent="communDao"/>
+    <bean id="mutualFundsServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.mutualFunds.MutualFundsServicio">
+        <property name="mutualFundsIo" ref="mutualFundsIo"/>
+    </bean>
+
+    <bean id="otherInvestmentsIo" scope="prototype" class="ve.com.vbtonline.servicio.io.OtherInvestmentsIo" parent="communDao"/>
+    <bean id="otherInvestmentsServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.otherInvestments.OtherInvestmentsServicio">
+        <property name="otherInvestmentsIo" ref="otherInvestmentsIo"/>
+    </bean>
+
+    <bean id="myInformationIo" scope="prototype" class="ve.com.vbtonline.servicio.io.MyInformationIo" parent="communDao"/>
+    <bean id="myInformationServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.myInformation.MyInformationServicio">
+        <property name="myInformationIo" ref="myInformationIo"/>
+    </bean>
+
+    <bean id="portafolioIo" scope="prototype" class="ve.com.vbtonline.servicio.io.PortafolioIo" parent="communDao"/>
+    <bean id="portafolioServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.portafolio.PortafolioServicio">
+        <property name="portafolioIo" ref="portafolioIo"/>
+    </bean>
+
+    <bean id="timeDepositsIo" scope="prototype" class="ve.com.vbtonline.servicio.io.TimeDepositsIo" parent="communDao"/>
+    <bean id="timeDepositsServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.timeDeposits.TimeDepositsServicio">
+        <property name="timeDepositsIo" ref="timeDepositsIo"/>
+    </bean>
+
+    <bean id="transfersIo" scope="prototype" class="ve.com.vbtonline.servicio.io.TransfersIo" parent="communDao"/>
+    <bean id="transfersServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.transfers.TransfersServicio">
+        <property name="transfersIo" ref="transfersIo"/>
+    </bean>
+
+    <bean id="securityIo" scope="prototype" class="ve.com.vbtonline.servicio.io.SecurityIo" parent="communDao"/>
+    <bean id="securityServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.security.SecurityServicio">
+        <property name="securityIo" ref="securityIo"/>
+    </bean>
+
+    <bean id="desingBankIo" scope="prototype" class="ve.com.vbtonline.servicio.io.DesingBankIo" parent="communDao"/>
+    <bean id="desingBankServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.desingBank.DesingBankServicio">
+        <property name="desingBankIo" ref="desingBankIo"/>
+    </bean>
+
+    <bean id="reportsPdfIo" scope="prototype" class="ve.com.vbtonline.servicio.io.ReportsPdfIo" parent="communDao"/>
+    <bean id="reportsPdfServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.reportsPdf.ReportsPdfServicio">
+        <property name="reportsPdfIo" ref="reportsPdfIo"/>
+    </bean>
+
+    <bean id="firmasConjuntasIo" scope="prototype" class="ve.com.vbtonline.servicio.io.FirmasConjuntasIo" parent="communDao" />
+    <bean id="firmasConjuntasServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.firmasConjuntas.FirmasConjuntasServicio">
+        <property name="firmasConjuntasIo" ref="firmasConjuntasIo"/>
+    </bean>
+
+    <bean id="clientInstructionIo" scope="prototype" class="ve.com.vbtonline.servicio.io.ClientInstructionIo" parent="communDao" />
+
+    <bean id="clientInstructionServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.clientInstruction.ClientInstructionServicio">
+        <property name="clientInstructionIo" ref="clientInstructionIo"/>
+    </bean>
+
+    <bean id="clientInstructionPdfIo" scope="prototype" class="ve.com.vbtonline.servicio.io.ClientInstructionIo" parent="communDao" />
+    <bean id="clientInstructionPdfServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.clientInstruction.ClientInstructionServicio">
+        <property name="clientInstructionIo" ref="clientInstructionPdfIo"/>
+    </bean>
+
+
+    <bean id="securityCardIo" scope="prototype" class="ve.com.vbtonline.servicio.io.SecurityCardIo" parent="communDao" />
+
+    <bean id="securityCardServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.securityCard.SecurityCardServicio">
+        <property name="securityCardIo" ref="securityCardIo"/>
+    </bean>
+    <bean id="securityCardPDFServicio" scope="prototype" class="ve.com.vbtonline.servicio.negocio.securityCard.SecurityCardServicio">
+        <property name="securityCardIo" ref="securityCardIo"/>
+    </bean>
+
+
+</beans>

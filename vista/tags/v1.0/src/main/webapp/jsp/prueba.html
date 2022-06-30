@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link type="text/css"  media="screen" rel="stylesheet" href="../resources/css/tabla/table_jui.css?_expirecache_=1" />
+    <link type="text/css"  media="screen" rel="stylesheet" href="../resources/css/tabla/jquery-ui-1.8.4.custom.css?_expirecache_=1"  />
+
+    <script type="text/javascript" language="javascript" src="../resources/jquery/jquery-1.7.2.js?_expirecache_=1"></script>
+    <script type="text/javascript" language="javascript" src="../resources/jquery/jquery-ui.1.8.js?_expirecache_=1"></script>
+    <script type='text/javascript' language="javascript" src="../resources/js/base/dataTables.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            $("#espacio > div ~ div ").html("RODOLFO");
+        });
+    </script>
+</head>
+<body>
+
+<ul>
+    <li id="opcion1">OPCION 1</li>
+    <li id="opcion2">OPCION 2</li>
+    <li id="opcion3">OPCION 3</li>
+    <li id="opcion4">OPCION 4</li>
+</ul>
+<div id="espacio">
+
+    <div id="carga" style="display: none"> carga</div>
+
+    <div id="div_opcion1" class="queda"> div OPCION 1</div>
+    <div id="div_opcion5"> div OPCION 5 NO DEBE APARECER</div>
+    <div id="div_opcion2" class="queda"> div OPCION 2</div>
+    <div id="div_opcion3" class="queda" >
+        22222222222222222222222<div>123121</div>    <br/>
+        div OPCION 3
+    </div>
+    <div id="div_opcion4" class="queda"> div OPCION 4</div>
+    <div id="div_opcion6"> div OPCION 6 NO DEBE APARECER</div>
+    <div id="div_opcion7"> div OPCION 7 NO DEBE APARECER</div>
+</div>
+</body>
+</html>

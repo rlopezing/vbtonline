@@ -1,0 +1,499 @@
+.sprited {
+    background: url("../images/download_sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    line-height: 1000px;
+    overflow: hidden;
+}
+.sprited_bu {
+    background: url("../images/download_sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    line-height: 1000px;
+    overflow: hidden;
+}
+.sprited_bc {
+    background: url("../images/download_sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    line-height: 1000px;
+    overflow: hidden;
+}
+
+.sprited_ac_bc {
+    background: url("../images/download_sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    line-height: 1000px;
+    overflow: hidden;
+}
+
+.sprited_ac_bu {
+    background: url("../images/download_sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    line-height: 1000px;
+    overflow: hidden;
+}
+/*#sign_up {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 700px;
+}*/
+#sign_up_sucursales {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 700px;
+}
+
+
+#sign_up_FC {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 700px;
+}
+
+/*#div_tabla_consultaOpcionesSistema,
+#div_tabla_consultaOpcionesSistema_CUC,
+#div_tabla_consultaOpcionesSistema_CUC_FC {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    !*width: 850px;*!
+}*/
+
+/*#div_tabla_consultaOpcionesSistema_CUC {*/
+    /*background: none repeat scroll 0 0 #EEF2F7;*/
+    /*border: 1px solid #536376;*/
+    /*display: none;*/
+    /*padding: 14px 22px;*/
+    /*position: relative;*/
+    /*width: 850px;*/
+/*}*/
+
+/*#div_tabla_consultaUsuarioOpcionesPermiso {*/
+    /*background: none repeat scroll 0 0 #EEF2F7;*/
+    /*border: 1px solid #536376;*/
+    /*display: none;*/
+    /*padding: 14px 22px;*/
+    /*position: relative;*/
+    /*width: 700px;*/
+/*}*/
+/*#div_buscarUsuarioContratoEC {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 700px;
+}
+
+#div_buscarUsuarioContrato {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 700px;
+}
+
+#div_AddBuscarUsuarioContrato {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 725px;
+}
+
+#div_AddBuscarUsuarioContratoEditar {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 725px;
+}
+
+#div_buscarCarteraContratoEC {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 700px;
+}
+
+#div_buscarCarteraContrato {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 700px;
+}
+#sign_up #sign_up_form {
+    margin-left: 10%;
+    margin-top: 13px;
+}
+
+#sign_up_FC #sign_up_form_FC {
+    margin-left: 10%;
+    margin-top: 13px;
+}
+#div_buscarUsuarioContratoEC #buscaform {
+    margin-left: 10%;
+    margin-top: 13px;
+}
+
+#div_buscarUsuarioContrato #buscaform_ac_bu {
+    margin-left: 10%;
+    margin-top: 13px;
+}
+
+#div_buscarCarteraContratoEC #buscaformcartera {
+    margin-left: 10%;
+    margin-top: 13px;
+}
+
+#div_buscarCarteraContrato #buscaform_ac {
+    margin-left: 10%;
+    margin-top: 13px;
+}*/
+
+#sign_up label {
+    color: #536376;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px;
+}
+#sign_up label input {
+    background-position: -201px 0;
+    display: block;
+    font-size: 1.2em;
+    /*height: 31px;*/
+    line-height: 31px;
+    padding: 2px 8px;
+    width: 195px;
+}
+
+#sign_up_template {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 700px;
+}
+#sign_up_template #sign_up_form_template {
+    margin-left: 10%;
+    margin-top: 13px;
+}
+#sign_up_template label {
+    color: #536376;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px;
+}
+#sign_up_template label input {
+    background-position: -201px 0;
+    display: block;
+    font-size: 1.2em;
+    /*height: 31px;*/
+    line-height: 31px;
+    padding: 2px 8px;
+    width: 195px;
+}
+/*
+#sign_up_template_transfer {
+    background: none repeat scroll 0 0 #EEF2F7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 850px;
+}
+#sign_up_template_transfer #sign_up_form_template_transfer {
+    margin-left: 5%;
+    margin-top: 13px;
+}
+#sign_up_template_transfer label {
+    color: #536376;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px;
+}
+#sign_up_template_transfer label input {
+    background-position: -201px 0;
+    display: block;
+    font-size: 1.2em;
+    !*height: 31px;*!
+    line-height: 31px;
+    padding: 2px 8px;
+    width: 195px;
+}*/
+
+#see_id {
+/*    color: #5D8D99;
+    font: bold 19px Arial;
+    height: 23px;
+    text-align: center;
+    width: 100%;*/
+}
+/*
+
+#see_id_cu {
+    color: #5D8D99;
+    font: bold 19px Arial;
+    height: 23px;
+    text-align: center;
+    width: 100%;
+}
+
+#see_id_cup {
+    color: #5D8D99;
+    font: bold 19px Arial;
+    height: 23px;
+    text-align: center;
+    width: 100%;
+}
+
+#see_id_bu {
+    color: #5D8D99;
+    font: bold 19px Arial;
+    height: 23px;
+    text-align: center;
+    width: 100%;
+}
+#see_id_bc {
+    color: #5D8D99;
+    font: bold 19px Arial;
+    height: 23px;
+    text-align: center;
+    width: 100%;
+}
+
+#see_id_ac_bc {
+    color: #5D8D99;
+    font: bold 19px Arial;
+    height: 23px;
+    text-align: center;
+    width: 100%;
+}
+
+#see_id_ac_bu {
+    color: #5D8D99;
+    font: bold 19px Arial;
+    height: 23px;
+    text-align: center;
+    width: 100%;
+}
+
+.see_id_ac_bu {
+    color: #5D8D99;
+    font: bold 19px Arial;
+    height: 23px;
+    text-align: center;
+    width: 100%;
+}
+
+#see_id_cuop {
+    color: #5D8D99;
+    font: bold 17px Arial;
+    height: 23px;
+    text-align: center;
+    width: 100%;
+}
+*/
+#left_out {
+    background-position: -202px -158px;
+    height: 16px;
+    width: 113px;
+}
+
+#actions {
+    bottom: 28px;
+    float: right;
+    height: 31px;
+    margin: 5px;
+    right: 0;
+}
+#actionsBUA {
+    bottom: 28px;
+    float: right;
+    height: 31px;
+    margin: 5px;
+    right: 0;
+}
+a.form_button {
+     float: left;
+     height: 31px;
+     margin-right: 15px;
+     width: 93px;
+ }
+
+#actionsBU {
+    bottom: 28px;
+    float: right;
+    height: 31px;
+    margin: 5px;
+    right: 0;
+}
+a.form_button {
+    float: left;
+    height: 31px;
+    margin-right: 15px;
+    width: 93px;
+}
+#cancel {
+    background-position: -198px -36px;
+}
+#log_in {
+    background-position: -291px -36px;
+}
+#cancel:hover {
+    background-position: -198px -67px;
+}
+#cancel:active {
+    background-position: -198px -98px;
+}
+#log_in:hover {
+    background-position: -291px -67px;
+}
+#log_in:active {
+    background-position: -291px -98px;
+}
+#close_x {
+    background-position: -387px -102px;
+    display: block;
+    height: 23px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+}
+
+#close_x_sucursales {
+    background-position: -387px -102px;
+    display: block;
+    height: 23px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+}
+#close_x_bu {
+    background-position: -387px -102px;
+    display: block;
+    height: 23px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+}
+#close_x_bc {
+    background-position: -387px -102px;
+    display: block;
+    height: 23px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+}
+
+#close_x_ac_bc {
+    background-position: -387px -102px;
+    display: block;
+    height: 23px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+}
+
+#close_x_ac_bu {
+    background-position: -387px -102px;
+    display: block;
+    height: 23px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+}
+
+#close_x_ac_btn {
+    background-position: -387px -102px;
+    display: block;
+    height: 23px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+}
+
+#close_x_ec_btn {
+    background-position: -387px -102px;
+    display: block;
+    height: 23px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+}
+
+#close_x_ec_btn_edit {
+    background-position: -387px -102px;
+    display: block;
+    height: 23px;
+    line-height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+}
+
+#usage {
+    background-position: -323px -172px;
+    height: 22px;
+    width: 67px;
+}
+#result {
+    cursor: pointer;
+}
+#logear {
+    cursor: pointer;
+}
+
+#BankCountry_buscar{
+    display: block;
+}
+
+#BankCodeType_buscar{
+    display: block;
+}

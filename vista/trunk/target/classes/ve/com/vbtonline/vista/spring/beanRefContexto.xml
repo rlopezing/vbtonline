@@ -1,0 +1,31 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="vbtonlineVistaBeanFactory" class="org.springframework.context.support.ClassPathXmlApplicationContext">
+        <constructor-arg>
+            <list>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsUsuario.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsAccounts.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsAllMyPortafolio.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsCreditCards.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsDesingBank.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsMutualFunds.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsOtherInvestments.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsMyInformation.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsPortafolio.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsSecurity.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsTimeDeposits.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsReportsPdf.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsTransfers.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsFirmasConjuntas.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsClientInstruction.xml</value>
+                <value>ve/com/vbtonline/vista/spring/appContextoStrutsSecurityCard.xml</value>
+
+            </list>
+        </constructor-arg>
+    </bean>
+
+
+</beans>

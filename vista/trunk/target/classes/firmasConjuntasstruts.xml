@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="FirmasConjuntas" namespace="/" extends="struts-default,json-default">
+                 
+       
+        <action name="FirmasConjuntas_consultarUsuarios" method="consultarUsuarios" class="ve.com.vbtonline.vista.action.firmasConjuntas.FirmasConjuntasAction">
+            <result name="input">/jsp/firmasConjuntas/ConsultarUsuariosFC.jsp</result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,firmasConjuntasServicio,data</param>
+                <!--/jsp/firmasConjuntas/ConsultarUsuariosFC.jsp-->
+            </result>
+        </action>
+
+
+        <action name="FirmasConjuntas_cargarGruposFC" method="cargarGruposFC" class="ve.com.vbtonline.vista.action.firmasConjuntas.FirmasConjuntasAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,firmasConjuntasServicio,data</param>
+            </result>
+        </action>
+
+
+        <action name="FirmasConjuntas_consultaUsuario" method="consultaUsuario" class="ve.com.vbtonline.vista.action.firmasConjuntas.FirmasConjuntasAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,firmasConjuntasServicio,data</param>
+            </result>
+        </action>
+
+        <action name="FirmasConjuntas_editarUsuario" method="editarUsuario" class="ve.com.vbtonline.vista.action.firmasConjuntas.FirmasConjuntasAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,firmasConjuntasServicio,data</param>
+            </result>
+        </action>
+
+        <action name="FirmasConjuntas_agregarUsuario" method="agregarUsuario" class="ve.com.vbtonline.vista.action.firmasConjuntas.FirmasConjuntasAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,firmasConjuntasServicio,data</param>
+            </result>
+        </action>
+
+        <action name="FirmasConjuntas_cargarParametrosPersonalesFC" method="cargarParametrosPersonales" class="ve.com.vbtonline.vista.action.firmasConjuntas.FirmasConjuntasAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,firmasConjuntasServicio,data</param>
+            </result>
+        </action>
+
+        <action name="FirmasConjuntas_guardarParametrosPersonalesFC" method="guardarParametrosPersonales" class="ve.com.vbtonline.vista.action.firmasConjuntas.FirmasConjuntasAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,firmasConjuntasServicio,data</param>
+            </result>
+        </action>
+
+        <action name="FirmasConjuntas_cargarRolesCustom" method="cargarRolesCustom" class="ve.com.vbtonline.vista.action.firmasConjuntas.FirmasConjuntasAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,firmasConjuntasServicio,data</param>
+            </result>
+        </action>
+
+        <action name="FirmasConjuntas_cargarRolesCustomDetalle" method="cargarRolesCustomDetalle" class="ve.com.vbtonline.vista.action.firmasConjuntas.FirmasConjuntasAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,firmasConjuntasServicio,data</param>
+            </result>
+        </action>
+        <!-- Add actions here -->
+    </package>
+</struts>

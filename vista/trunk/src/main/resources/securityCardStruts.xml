@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="SecurityCard" namespace="/" extends="struts-default,json-default">
+
+        <!--<action name="SecurityCard_*" method="{1}" class="ve.com.vbtonline.vista.action.securityCard.SecurityCardAction">
+            <result name="input">/jsp/securityCard/SecurityCard.jsp</result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityCardServicio,data</param>
+                /jsp/securityCard/SecurityCard.jsp
+            </result>
+        </action>  -->
+        <action name="SecurityCard_cargarValoresActivacion" method="cargarValoresActivacion" class="ve.com.vbtonline.vista.action.securityCard.SecurityCardAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityCardServicio,data</param>
+                /jsp/securityCard/activateSecurityCard.jsp
+            </result>
+        </action>
+        <action name="SecurityCard_cargarValoresGeneracion" method="cargarValoresGeneracion" class="ve.com.vbtonline.vista.action.securityCard.SecurityCardAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityCardServicio,data</param>
+                /jsp/securityCard/generateSecurityCard.jsp
+            </result>
+        </action>
+        <action name="SecurityCard_activarTarjeta" method="activarTarjeta" class="ve.com.vbtonline.vista.action.securityCard.SecurityCardAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityCardServicio,data</param>
+            </result>
+        </action>
+
+        <action name="generatePdfSecurityCard" method="generatePdfSecurityCard" class="ve.com.vbtonline.vista.action.securityCard.SecurityCardPDFAction">
+            <!--<result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>-->
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="Security_Card.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+        <!-- Add actions here -->
+    </package>
+</struts>

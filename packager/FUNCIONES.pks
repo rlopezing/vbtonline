@@ -1,0 +1,21 @@
+CREATE OR REPLACE PACKAGE VBTONLINE_TRANS.FUNCIONES
+IS
+
+FUNCTION FORMATO_VACIO (v_dato VARCHAR2) RETURN VARCHAR2;
+
+FUNCTION FORMATO_VACIO_HTML (v_dato VARCHAR2) RETURN VARCHAR2;
+
+PROCEDURE Send_Email (sender IN VARCHAR2, recipient IN VARCHAR2, subject IN VARCHAR2, message IN VARCHAR2);
+
+PROCEDURE Send_Html_Email (sender IN VARCHAR2, recipient IN VARCHAR2,subject IN VARCHAR2, message IN VARCHAR2);
+
+PROCEDURE Send_Email_Destinatarios (sender IN VARCHAR2, recipient IN VARCHAR2,subject IN VARCHAR2, message IN VARCHAR2);
+PROCEDURE Send_Email_Destinatarios_p (sender IN VARCHAR2, recipient IN VARCHAR2,
+subject IN VARCHAR2, message IN VARCHAR2);
+
+PROCEDURE Send_Html_Email_destinatarios (sender IN VARCHAR2, recipient IN VARCHAR2,
+subject IN VARCHAR2, message IN VARCHAR2);
+
+END FUNCIONES;
+/
+

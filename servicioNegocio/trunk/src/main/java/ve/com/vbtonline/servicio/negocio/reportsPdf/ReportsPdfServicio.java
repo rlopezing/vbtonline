@@ -1,0 +1,303 @@
+package ve.com.vbtonline.servicio.negocio.reportsPdf;
+
+import org.apache.log4j.Logger;
+import ve.com.vbtonline.servicio.io.ReportsPdfIo;
+import ve.com.vbtonline.servicio.negocio.BasicService;
+import ve.com.vbtonline.servicio.negocio.portafolio.IPortafolioServicio;
+import ve.com.vbtonline.servicio.od.VBTUsersOd;
+
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: Rgodoy
+ * Date: 12/07/12
+ * Time: 11:43 AM
+ * To change this template use File | Settings | File Templates.
+ */
+public class ReportsPdfServicio extends BasicService implements IReportsPdfServicio,Serializable {
+    private static final Logger logger = Logger.getLogger(ReportsPdfServicio.class);
+
+    /** El Data Access Object
+     */
+    private ReportsPdfIo reportsPdfIo;
+
+
+    public ReportsPdfIo getReportsPdfIo() {
+        return reportsPdfIo;
+    }
+
+    public void setReportsPdfIo(ReportsPdfIo reportsPdfIo) {
+        this.reportsPdfIo = reportsPdfIo;
+    }
+
+    /** Constructor de la clase
+     */
+    public ReportsPdfServicio(){
+    }
+
+    /**
+     * Retorno al informacion de cabecera de estado de cuenta
+     * @param num_cta
+     * @param mes
+     * @param anio
+     * @return
+     * @throws Exception
+     */
+    public List<String> consultarCabeceraEdoCuenta (String num_cta, String mes , String anio,VBTUsersOd usuario) throws Exception {
+        final String origen = "ReportsPdfServicio.consultarCabeceraEdoCuenta";
+
+        long time;
+
+        List<String> cabecera = new ArrayList<String>();
+        try {
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.inicio.ser")+ReportsPdfServicio.class+" | "+origen);
+
+            time = System.currentTimeMillis ();
+
+            cabecera =  reportsPdfIo.consultarCabeceraEdoCuenta(num_cta, mes, anio, usuario);
+
+            time = System.currentTimeMillis () - time;
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.exitos.ser")+ReportsPdfServicio.class+" | "+origen);
+        }
+        catch (Exception ex) {
+            logger.error(ex); throw (new Exception (ex.getMessage(),null));
+        }
+
+        return (cabecera);
+    }
+
+    public List<String> consultarCabeceraEdoCuentaTDC (String num_cta, String codproserv , String mes,VBTUsersOd usuario) throws Exception {
+        final String origen = "ReportsPdfServicio.consultarCabeceraEdoCuentaTDC";
+
+        long time;
+
+        List<String> cabecera = new ArrayList<String>();
+        try {
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.inicio.ser")+ReportsPdfServicio.class+" | "+origen);
+
+            time = System.currentTimeMillis ();
+
+            cabecera =  reportsPdfIo.consultarCabeceraEdoCuentaTDC(num_cta, codproserv, mes, usuario);
+
+            time = System.currentTimeMillis () - time;
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.exitos.ser")+ReportsPdfServicio.class+" | "+origen);
+        }
+        catch (Exception ex) {
+            logger.error(ex); throw (new Exception (ex.getMessage(),null));
+        }
+
+        return (cabecera);
+    }
+
+    public List<List<String>> consultarTablaEdoCuenta (String num_cta, String mes , String anio,VBTUsersOd usuario) throws Exception {
+        final String origen = "ReportsPdfServicio.consultarTablaEdoCuenta";
+
+        long time;
+
+        List<List<String>> tabla = new ArrayList<List<String>>();
+        try {
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.inicio.ser")+ReportsPdfServicio.class+" | "+origen);
+
+            time = System.currentTimeMillis ();
+
+            tabla =  reportsPdfIo.consultarTablaEdoCuenta(num_cta, mes, anio, usuario);
+
+            time = System.currentTimeMillis () - time;
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.exitos.ser")+ReportsPdfServicio.class+" | "+origen);
+        }
+        catch (Exception ex) {
+            logger.error(ex); throw (new Exception (ex.getMessage(),null));
+        }
+
+        return (tabla);
+    }
+
+    public List<List<String>> consultarTablaEdoCuentaTDC (String num_cta, String codproserv , String mes,VBTUsersOd usuario) throws Exception {
+        final String origen = "ReportsPdfServicio.consultarTablaEdoCuentaTDC";
+
+        long time;
+
+        List<List<String>> tabla = new ArrayList<List<String>>();
+        try {
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.inicio.ser")+ReportsPdfServicio.class+" | "+origen);
+
+            time = System.currentTimeMillis ();
+
+            tabla =  reportsPdfIo.consultarTablaEdoCuentaTDC(num_cta, codproserv, mes, usuario);
+
+            time = System.currentTimeMillis () - time;
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.exitos.ser")+ReportsPdfServicio.class+" | "+origen);
+        }
+        catch (Exception ex) {
+            logger.error(ex); throw (new Exception (ex.getMessage(),null));
+        }
+
+        return (tabla);
+    }
+
+    public List<String> consultarDatosCliente (String cliente, VBTUsersOd usuario) throws Exception {
+        final String origen = "ReportsPdfServicio.consultarDatosCliente";
+
+        long time;
+
+        List<String> datos = new ArrayList<String>();
+        try {
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.inicio.ser")+ReportsPdfServicio.class+" | "+origen);
+
+            time = System.currentTimeMillis ();
+
+            datos =  reportsPdfIo.consultarDatosCliente(cliente, usuario);
+
+            time = System.currentTimeMillis () - time;
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.exitos.ser")+ReportsPdfServicio.class+" | "+origen);
+        }
+        catch (Exception ex) {
+            logger.error(ex); throw (new Exception (ex.getMessage(),null));
+        }
+
+        return (datos);
+    }
+
+    public List<String> consultarCeritificadoApertura (String codIntrumento, VBTUsersOd usuario) throws Exception{
+        final String origen = "ReportsPdfServicio.consultarCeritificadoApertura";
+
+        long time;
+
+        List<String> cabecera = new ArrayList<String>();
+        try {
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.inicio.ser")+ReportsPdfServicio.class+" | "+origen);
+
+            time = System.currentTimeMillis ();
+
+            cabecera =  reportsPdfIo.consultarCeritificadoApertura(codIntrumento, usuario);
+
+            time = System.currentTimeMillis () - time;
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.exitos.ser")+ReportsPdfServicio.class+" | "+origen);
+        }
+        catch (Exception ex) {
+            logger.error(ex); throw (new Exception (ex.getMessage(),null));
+        }
+
+        return (cabecera);
+    }
+
+    public List<List<String>> consultarmovimientosCertificado (String codIntrumento,String estatus, VBTUsersOd usuario) throws Exception {
+        final String origen = "ReportsPdfServicio.consultarmovimientosApertura";
+
+        long time;
+
+        List<List<String>> tabla = new ArrayList<List<String>>();
+        try {
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.inicio.ser")+ReportsPdfServicio.class+" | "+origen);
+
+            time = System.currentTimeMillis ();
+
+            tabla =  reportsPdfIo.consultarmovimientosCertificado(codIntrumento,estatus, usuario);
+
+            time = System.currentTimeMillis () - time;
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.exitos.ser")+ReportsPdfServicio.class+" | "+origen);
+        }
+        catch (Exception ex) {
+            logger.error(ex); throw (new Exception (ex.getMessage(),null));
+        }
+
+        return (tabla);
+    }
+
+    public List<List<List<String>>> consultarTablaEdoCuentaFondos (String codemp, String codcar , String fechaEmision, String razon, String moneda, VBTUsersOd usuario) throws Exception {
+        final String origen = "ReportsPdfServicio.consultarTablaEdoCuentaFondos";
+
+        long time;
+
+        List<List<List<String>>> tabla = new ArrayList<List<List<String>>>();
+        try {
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.inicio.ser")+ReportsPdfServicio.class+" | "+origen);
+
+            time = System.currentTimeMillis ();
+
+            tabla =  reportsPdfIo.consultarTablaEdoCuentaFondos(codemp, codcar, fechaEmision, razon, moneda, usuario);
+
+            time = System.currentTimeMillis () - time;
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.exitos.ser")+ReportsPdfServicio.class+" | "+origen);
+        }
+        catch (Exception ex) {
+            logger.error(ex); throw (new Exception (ex.getMessage(),null));
+        }
+
+        return (tabla);
+    }
+
+
+    public List<List<String>> consultarTablaEdoCuentaFondosDividendos (String codemp, String fechaEmision, VBTUsersOd usuario) throws Exception {
+        final String origen = "ReportsPdfServicio.consultarTablaEdoCuentaFondosDividendos";
+
+        long time;
+
+        List<List<String>> tabla = new ArrayList<List<String>>();
+        try {
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.inicio.ser")+ReportsPdfServicio.class+" | "+origen);
+
+            time = System.currentTimeMillis ();
+
+            tabla =  reportsPdfIo.consultarTablaEdoCuentaFondosDividendos(codemp, fechaEmision, usuario);
+
+            time = System.currentTimeMillis () - time;
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.exitos.ser")+ReportsPdfServicio.class+" | "+origen);
+        }
+        catch (Exception ex) {
+            logger.error(ex); throw (new Exception (ex.getMessage(),null));
+        }
+
+        return (tabla);
+    }
+
+
+      /*
+    public String guardarLog (String parametro1, String parametro2,String parametro3,String parametro4,String parametro5,String parametro6, String parametro7) throws Exception {
+        final String origen = "ReportsPdfServicio.guardarLog";
+
+        long time;
+
+        String respuesta = new String();
+        try {
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.inicio.ser")+ReportsPdfServicio.class+" | "+origen);
+
+            time = System.currentTimeMillis ();
+
+            respuesta = getReportsPdfIo().GuardarLog(parametro1, parametro2, parametro3, parametro4, parametro5, parametro6, parametro7);
+
+            time = System.currentTimeMillis () - time;
+
+            logger.info(ResourceBundle.getBundle("mensajeslogs").getString("mensaje.exitos.ser")+ReportsPdfServicio.class+" | "+origen);
+        }
+        catch (Exception ex) {
+            logger.error(ex); throw (new Exception (ex.getMessage(),null));
+        }
+
+        return (respuesta);
+    }  */
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/vista/trunk/src/main/webapp/jsp/creditCards/paymentCard/paymentHistory.jsp" value="file://$PROJECT_DIR$/vista/trunk/src/main/webapp/jsp/creditCards/paymentCard" />
+        <entry key="file://$PROJECT_DIR$/vista/trunk/src/main/webapp/jsp/transfers/templates/Templates.jsp" value="file://$PROJECT_DIR$/vista/trunk/src/main/webapp/jsp/transfers/templates" />
+        <entry key="file://$PROJECT_DIR$/vista/trunk/src/main/webapp/jsp/transfers/toOtherBanks/ToOtherBanks.jsp" value="file://$PROJECT_DIR$/vista/trunk/src/main/webapp/jsp/transfers/toOtherBanks" />
+      </map>
+    </option>
+  </component>
+</project>

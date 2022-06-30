@@ -1,0 +1,13 @@
+<?xml version="1.0"?><!-- iReport connections -->
+<iReportConnectionSet>
+
+	<iReportConnection name="MI_CONEXION_VBTONLINE" connectionClass="com.jaspersoft.ireport.designer.connection.JDBCConnection">
+		<connectionParameter name="ServerAddress"><![CDATA[]]></connectionParameter>
+		<connectionParameter name="SavePassword"><![CDATA[true]]></connectionParameter>
+		<connectionParameter name="Url"><![CDATA[jdbc:oracle:thin:@192.168.223.42:1521:VCOL]]></connectionParameter>
+		<connectionParameter name="JDBCDriver"><![CDATA[oracle.jdbc.driver.OracleDriver]]></connectionParameter>
+		<connectionParameter name="Database"><![CDATA[]]></connectionParameter>
+		<connectionParameter name="Password"><![CDATA[trans]]></connectionParameter>
+		<connectionParameter name="Username"><![CDATA[VBTONLINE_TRANS]]></connectionParameter>
+	</iReportConnection>
+</iReportConnectionSet>

@@ -1,0 +1,27 @@
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr//dwr20.dtd">
+<dwr>
+  <allow>
+    <create creator="none" javascript="DWRAction">
+      <param name="class" value="ve.com.vbtonline.vista.dwr.DWRAction"/>
+    </create>
+    <convert converter="bean" match="org.directwebremoting.webwork.ActionDefinition">
+      <param name="include" value="namespace,action,method,executeResult"/>
+    </convert>
+    <convert converter="bean" match="ve.com.vbtonline.servicio.od.*"/>
+     <convert converter="bean" match="ve.com.vbtonline.vista.action.*"/>
+    <convert converter="bean" match="ve.com.vbtonline.vista.action.usuario.LoginAction">
+      <param name="include" value="usuario"/>
+    </convert>
+  </allow>
+  <signatures>
+  <![CDATA[
+  import java.util.Map;
+  import org.directwebremoting.webwork.ActionDefinition;
+  import javax.servlet.ServletContext;
+  import javax.servlet.http.HttpServletRequest;
+  import javax.servlet.http.HttpServletResponse;
+
+  DWRAction.execute (ActionDefinition actionDefinition, Map<String, String> params, HttpServletRequest request, HttpServletResponse response, ServletContext servletContext);
+  ]]>
+  </signatures>
+</dwr>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="Login" namespace="/" extends="struts-default,json-default">
+
+        <!--<action name="Login_*" method="{1}" class="ve.com.vbtonline.vista.action.usuario.LoginAction">-->
+        <!--<result name="input">/jsp/login/index.jsp-->
+        <!--&lt;!&ndash;<param name="mensaje"></param>&ndash;&gt;-->
+        <!--</result>-->
+        <!--<result name="success">/jsp/inicio/home/Home.jsp</result>-->
+        <!--<result name="salir" type="redirect">/</result>-->
+        <!--<result name="json" type="json">-->
+        <!--<param name="excludeProperties">fabrica,loginServicio,data</param>-->
+        <!--/jsp/inicio/home/Home.jsp-->
+        <!--</result>-->
+        <!--</action>-->
+
+
+        <action name="Login_*" method="{1}" class="ve.com.vbtonline.vista.action.usuario.LoginAction">
+            <result name="input">
+                /jsp/inicio/home/Login.jsp
+            </result>
+            <result name="popup">
+                /jsp/inicio/home/Login.jsp
+            </result>
+            <result name="bank" type="redirect">
+                http://www.vbtbank.com/espanol/index.html
+            </result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,loginServicio,data</param>
+            </result>
+            <result name="salir">/jsp/inicio/home/Login.jsp</result>
+            <result name="json" type="json">
+                <param name="excludeProperties">fabrica,loginServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Home_*" method="{1}" class="ve.com.vbtonline.vista.action.usuario.LoginAction">
+            <result name="input">
+                /jsp/inicio/home/Home.jsp
+            </result>
+            <result name="popup">
+                /jsp/inicio/home/Home.jsp
+            </result>
+            <result name="bank" type="redirect">
+                http://www.vbtbank.com/espanol/index.html
+            </result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,loginServicio,data</param>
+            </result>
+            <result name="salir">/jsp/inicio/home/Login.jsp</result>
+            <result name="json" type="json">
+                <param name="excludeProperties">fabrica,loginServicio,data</param>
+            </result>
+        </action>
+
+        <action name="mostrarPantalla" method="mostrarPantalla" class="ve.com.vbtonline.vista.action.usuario.LoginAction">
+            <result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,loginServicio,data</param>
+            </result>
+        </action>
+        <action name="loginOpeEsp" method="loginOpeEsp" class="ve.com.vbtonline.vista.action.usuario.LoginAction">
+            <result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,loginServicio,data</param>
+            </result>
+        </action>
+        <action name="crearClaveOpeEsp" method="crearClaveOpeEsp" class="ve.com.vbtonline.vista.action.usuario.LoginAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,loginServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Login_cambiarIdioma" method="cambiarIdioma" class="ve.com.vbtonline.vista.action.usuario.LoginAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,loginServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Login_cargarCalendario" method="cargarCalendario" class="ve.com.vbtonline.vista.action.usuario.LoginAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,loginServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Login_validarCaptcha" method="validarCaptcha" class="ve.com.vbtonline.vista.action.usuario.LoginAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,loginServicio,data</param>
+            </result>
+        </action>
+
+        <!-- Add actions here -->
+    </package>
+</struts>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="TimeDeposits" namespace="/" extends="struts-default,json-default">
+
+
+
+        <action name="TimeDeposits_consultarCertificados" method="consultarCertificados" class="ve.com.vbtonline.vista.action.timeDeposits.TimeDepositsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,timeDepositsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="TimeDeposits_consultarVencimientos" method="consultarVencimientos" class="ve.com.vbtonline.vista.action.timeDeposits.TimeDepositsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,timeDepositsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="TimeDeposits_cargarColocaciones" method="cargarColocaciones" class="ve.com.vbtonline.vista.action.timeDeposits.TimeDepositsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,timeDepositsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="TimeDeposits_cargarColocacionesBloqueos" method="cargarColocacionesBloqueos" class="ve.com.vbtonline.vista.action.timeDeposits.TimeDepositsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,timeDepositsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="TimeDeposits_consultarColocacionesSaldos" method="consultarColocacionesSaldos" class="ve.com.vbtonline.vista.action.timeDeposits.TimeDepositsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,timeDepositsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="TimeDeposits_consultarBloqueos" method="consultarBloqueos" class="ve.com.vbtonline.vista.action.timeDeposits.TimeDepositsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,timeDepositsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="TimeDeposits_ImprimirSaldosTrans" method="ImprimirSaldosTrans" class="ve.com.vbtonline.vista.action.timeDeposits.TimeDepositsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,timeDepositsServicio,data</param>
+            </result>
+        </action>
+
+        <!-- Add actions here -->
+    </package>
+</struts>

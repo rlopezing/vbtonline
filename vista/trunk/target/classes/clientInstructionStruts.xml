@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="ClientInstruction" namespace="/" extends="struts-default,json-default">
+
+        <action name="ClientInstruction_*" method="{1}" class="ve.com.vbtonline.vista.action.clientInstruction.ClientInstructionAction">
+            <result name="input">/jsp/clientInstruction/ClientInstruction.jsp</result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,clientInstructionServicio,data</param>
+                /jsp/clientInstruction/ClientInstruction.jsp
+            </result>
+        </action>
+
+        <action name="ClientInstruction_loadValues" method="loadValues" class="ve.com.vbtonline.vista.action.clientInstruction.ClientInstructionAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,clientInstructionServicio,data</param>
+            </result>
+        </action>
+
+        <action name="generatePdfClientInstruction" method="generatePdfClientInstruction" class="ve.com.vbtonline.vista.action.clientInstruction.ClientInstructionPdfAction">
+            <!--<result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>-->
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="client_instruction.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+        <!-- Add actions here -->
+    </package>
+</struts>

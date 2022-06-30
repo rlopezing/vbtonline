@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="reportsPdfAction" scope="prototype" class="ve.com.vbtonline.vista.action.reportsPdf.ReportsPdfAction">
+        <property name="reportsPdfServicio" ref="reportsPdfServicio"/>
+    </bean>
+
+    <bean id="reportsMutualFoundsPdfAction" scope="prototype" class="ve.com.vbtonline.vista.action.reportsPdf.ReportsPdfAction">
+        <property name="reportsPdfServicio" ref="reportsPdfServicio"/>
+    </bean>
+
+
+</beans>

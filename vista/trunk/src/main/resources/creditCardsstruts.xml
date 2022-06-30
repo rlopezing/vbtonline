@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="CreditCards" namespace="/" extends="struts-default,json-default">
+
+        <action name="CreditCards_cargarTarjetas" method="cargarTarjetasEstadoCuentaTDC" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+        <action name="CreditCards_cargarDetalleYMovimientosEstadoCuentaTDC" method="cargarDetalleYMovimientosEstadoCuentaTDC" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+        <action name="CreditCards_cargarMovimientosTDCITT" method="cargarMovimientosTDCITT" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_cargarTarjetasITT" method="cargarTarjetasITT" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_cargarTarjetasCL" method="cargarTarjetasCL" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_cargarTdcPagos" method="cargarTdcPagos" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+
+        <action name="CreditCards_cargarEstatusTDCCL" method="cargarEstatusTDCCL" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type=
+                    "json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_crearReglaTDCCL" method="crearReglaTDCCL" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_eliminarReglaTDCCL" method="eliminarReglaTDCCL" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+
+        <action name="CreditCards_validarFecha" method="validarFecha" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_validarFechaBO" method="validarFechaBO" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+
+        <action name="CreditCards_editarRegla" method="editarRegla" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+
+        <action name="CreditCards_validarFechaEdit" method="validarFechaEdit" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_cargarProximoDiaHabil" method="cargarProximoDiaHabil" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_cargarFeriados" method="cargarFeriados" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+
+        <action name="CreditCards_cargarHistoricoPagosTDC" method="cargarHistoricoPagosTDC" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_guardarPagoTDC" method="guardarPagoTDC" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_cargarPagosTdc" method="cargarPagosTdc" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_detallePagoTDC" method="detallePagoTDC" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_cambiarEstatusPagosTdc" method="cambiarEstatusPagosTdc" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_cargarDatosPagosTDC" method="cargarDatosPagosTDC" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_validarLimiteSalvis" method="validarLimiteSalvis" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <!-- Add actions here -->
+
+        <!-- card lock emergency -->
+
+        <action name="CreditCards_cargarEstatusTDCCLE" method="cargarEstatusTDCCLE" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_cambiarEstatusCLE" method="cambiarEstatusCLE" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="CreditCards_cargarTarjetasCLE" method="cargarTarjetasCLE" class="ve.com.vbtonline.vista.action.creditCards.CreditCardsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,creditCardsServicio,data</param>
+            </result>
+        </action>
+
+    </package>
+</struts>

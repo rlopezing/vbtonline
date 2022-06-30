@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="DesingBank" namespace="/" extends="struts-default,json-default">
+
+        <!--<action name="Accounts_*" method="{1}" class="ve.com.vbtonline.vista.action.accounts.AccountsAction">-->
+            <!--<result name="input">/jsp/accounts/Accounts.jsp</result>-->
+            <!--<result name="success" type="json">-->
+                <!--<param name="excludeProperties">fabrica,accountsServicio,data</param>-->
+                <!--/jsp/accounts/Accounts.jsp-->
+            <!--</result>-->
+        <!--</action>-->
+
+        <action name="DesingBank_cambiarClave" method="cambiarClave" class="ve.com.vbtonline.vista.action.desingBank.DesingBankAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,desingBankServicio,data</param>
+            </result>
+        </action>
+
+        <action name="DesingBank_cargarParametrosPersonales" method="cargarParametrosPersonales" class="ve.com.vbtonline.vista.action.desingBank.DesingBankAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,desingBankServicio,data</param>
+            </result>
+        </action>
+
+        <action name="DesingBank_guardarParametrosPersonales" method="guardarParametrosPersonales" class="ve.com.vbtonline.vista.action.desingBank.DesingBankAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,desingBankServicio,data</param>
+            </result>
+        </action>
+
+        <action name="DesingBank_guardarLogMetodosValidacion" method="guardarLogMetodosValidacion" class="ve.com.vbtonline.vista.action.desingBank.DesingBankAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,desingBankServicio,data</param>
+            </result>
+        </action>
+
+        <!-- Add actions here -->
+    </package>
+</struts>

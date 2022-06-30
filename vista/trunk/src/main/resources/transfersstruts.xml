@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="Transfers" namespace="/" extends="struts-default,json-default">
+
+        <action name="Transfers_*" method="{1}" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="input">/jsp/transfers/Transfers.jsp</result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+                /jsp/transfers/Transfers.jsp
+            </result>
+        </action>
+
+        <action name="Transfers_*" method="{1}" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="input">/jsp/transfers/Transfers.jsp</result>
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+                /jsp/transfers/Transfers.jsp
+            </result>
+        </action>
+
+        <action name="Transfers_validateToOtherBanks" method="validateToOtherBanks" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_saveToOtherBanks" method="saveToOtherBanks" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_saveToOtherBanks_JS" method="saveToOtherBanks_JS" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_cargarToOtherClient" method="cargarToOtherClient" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_validarCuentaDestino_TOC" method="validarCuentaDestino_TOC" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_saveToOtherClient" method="saveToOtherClient" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_saveBetweenMyAccounts" method="saveBetweenMyAccounts" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_cargarTranEntreMisCuentas" method="cargarTranEntreMisCuentas" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_transferenciasPorAprobar" method="transferenciasPorAprobar" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_transferenciasPorLiberar" method="transferenciasPorLiberar" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_cambiarEstatusTransferenciaAprobar" method="cambiarEstatusTransferenciaAprobar" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_cambiarEstatusTransferenciaLiberar" method="cambiarEstatusTransferenciaLiberar" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_consultarTransferencias" method="consultarTransferencias" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_consultarDirectorio" method="consultarDirectorio" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_cargarDetalleDirectorio" method="cargarDetalleDirectorio" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_editarDetalleDirectorio" method="editarDetalleDirectorio" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_salvarNuevoDirectorio" method="salvarNuevoDirectorio" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_borrarDirectorio" method="borrarDirectorio" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_validarClaveTransferenciasTOB" method="validarClaveTransferenciasTOB" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_validarClaveTransferenciasAprobar" method="validarClaveTransferenciasAprobar" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_cargarBuscarBanco" method="cargarBuscarBanco" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_buscarBanco" method="buscarBanco" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+        <action name="Transfers_cambiarEstatusTemplate" method="cambiarEstatusTemplate" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_fileUpload" method="fileUpload" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_removerSoporte" method="removerSoporte" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_borrarArchivo" method="borrarArchivo" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_cargarProductosToOtherClient" method="cargarProductosToOtherClient" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Transfers_calcularComisionCancelacion" method="calcularComisionCancelacion" class="ve.com.vbtonline.vista.action.transfers.TransfersAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,transfersServicio,data</param>
+            </result>
+        </action>
+
+        <!-- Add actions here -->
+    </package>
+</struts>

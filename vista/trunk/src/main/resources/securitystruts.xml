@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="Security" namespace="/" extends="struts-default,json-default">
+
+        <!--<action name="Accounts_*" method="{1}" class="ve.com.vbtonline.vista.action.accounts.AccountsAction">-->
+            <!--<result name="input">/jsp/accounts/Accounts.jsp</result>-->
+            <!--<result name="success" type="json">-->
+                <!--<param name="excludeProperties">fabrica,accountsServicio,data</param>-->
+                <!--/jsp/accounts/Accounts.jsp-->
+            <!--</result>-->
+        <!--</action>-->
+
+
+        <action name="Security_crearClaveRamdom" method="crearClaveRamdom" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+        <action name="Security_crearClaveRamdomSMS" method="crearClaveRamdomSMS" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+        <action name="Security_crearClaveRamdomOpeEsp" method="crearClaveRamdomOpeEsp" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+        <action name="Security_verificarSiClaveProvisonalOpeEsp" method="verificarSiClaveProvisonalOpeEsp" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+        <action name="Security_cambiarClaveOpeEspPersonal" method="cambiarClaveOpeEspPersonal" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Security_enviarClave" method="enviarClave" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Security_enviarClaveSMS" method="enviarClaveSMS" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Security_validarClaveSMS" method="validarClaveSMS" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+        <action name="Security_validarCoordenadas" method="validarCoordenadas" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+        <action name="Security_enviarUsuario" method="enviarUsuario" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Security_enviarUsuarioCorreo" method="enviarUsuarioCorreo" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Security_enviarUsuarioSMS" method="enviarUsuarioSMS" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Security_enviarClaveUsuarioBackoffice" method="enviarClaveUsuarioBackoffice" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Security_enviarClaveUsuarioFirmaConjunta" method="enviarClaveUsuarioFirmaConjunta" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+
+        <action name="Security_cargarCoordenadas" method="cargarCoordenadas" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+        <action name="Security_cargarMetodos" method="cargarMetodos" class="ve.com.vbtonline.vista.action.security.SecurityAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,securityServicio,data</param>
+            </result>
+        </action>
+        <!-- Add actions here -->
+    </package>
+</struts>

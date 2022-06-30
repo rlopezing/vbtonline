@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="reportsPdf" namespace="/" extends="struts-default,json-default">
+
+        <action name="reportEdoCuenta" method="reportEdoCuenta" class="ve.com.vbtonline.vista.action.reportsPdf.ReportsPdfAction">
+            <!--<result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>-->
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="EdoCuenta.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+
+        <action name="reportEdoCuentaFondoMutual" method="reportEdoCuentaFondoMutual" class="ve.com.vbtonline.vista.action.reportsPdf.ReportsPdfAction">
+            <!--<result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>-->
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="EdoCuentaFondoMutual.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+
+        <action name="reportaccountBT" method="reportaccountBT" class="ve.com.vbtonline.vista.action.reportsPdf.ReportsPdfAction">
+            <!--<result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>-->
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="reportaccountBT.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+
+        <action name="reportColOperation" method="reportColOperation" class="ve.com.vbtonline.vista.action.reportsPdf.ReportsPdfAction">
+            <!--<result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>-->
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="reportColOperation.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+
+        <action name="reportCertificados" method="reportCertificados" class="ve.com.vbtonline.vista.action.reportsPdf.ReportsPdfAction">
+            <!--<result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>-->
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="reportCertificados.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+
+
+        <action name="reportEarnedInterest" method="reportEarnedInterest" class="ve.com.vbtonline.vista.action.reportsPdf.ReportsPdfAction">
+            <!--<result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>-->
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="reportEarnedInterest.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+
+        <action name="reportBlockDetail" method="reportBlockDetail" class="ve.com.vbtonline.vista.action.reportsPdf.ReportsPdfAction">
+            <!--<result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>-->
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="reportBlockDetail.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+
+        <action name="reportEdoCuentaTDC" method="reportEdoCuentaTDC" class="ve.com.vbtonline.vista.action.reportsPdf.ReportsPdfAction">
+            <!--<result name="input">/jsp/transfers/validarClaveOpeEsp.jsp</result>-->
+            <result name="success" type="stream">
+                <param name="inputName">inputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="reportEdoCuentaTDC.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+        <!-- Add actions here -->
+    </package>
+</struts>

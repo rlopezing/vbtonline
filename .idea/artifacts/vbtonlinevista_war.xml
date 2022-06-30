@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="vbtonlinevista:war">
+    <output-path>$PROJECT_DIR$/vista/trunk/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>vbtonlinevista</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="struts2-archetype-starter.war">
+      <element id="artifact" artifact-name="vbtonlinevista:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="MutualFunds" namespace="/" extends="struts-default,json-default">
+
+        <action name="MutualFunds_cargarFondosMutuales" method="cargarFondosMutuales" class="ve.com.vbtonline.vista.action.mutualFunds.MutualFundsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,mutualFundsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="MutualFunds_cargarFondosMutualesRazonMoneda" method="cargarFondosMutualesRazonMoneda" class="ve.com.vbtonline.vista.action.mutualFunds.MutualFundsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,mutualFundsServicio,data</param>
+            </result>
+        </action>
+        <action name="MutualFunds_cargarFondosMutualesBloqueos" method="cargarFondosMutualesBloqueos" class="ve.com.vbtonline.vista.action.mutualFunds.MutualFundsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,mutualFundsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="MutualFunds_consultarDetalleFondosMutualesBT" method="consultarDetalleFondosMutualesBT" class="ve.com.vbtonline.vista.action.mutualFunds.MutualFundsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,mutualFundsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="MutualFunds_consultarSaldosTransFondosMutuales" method="consultarSaldosTransFondosMutuales" class="ve.com.vbtonline.vista.action.mutualFunds.MutualFundsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,mutualFundsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="MutualFunds_consultarBloqueosFondosMutuales" method="consultarBloqueosFondosMutuales" class="ve.com.vbtonline.vista.action.mutualFunds.MutualFundsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,mutualFundsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="MutualFunds_consultarEstadoCuenta" method="consultarEstadoCuenta" class="ve.com.vbtonline.vista.action.mutualFunds.MutualFundsAction">
+            <result name="success" type="json">
+                <param name="excludeProperties">fabrica,mutualFundsServicio,data</param>
+            </result>
+        </action>
+
+        <action name="MutualFunds_generarPDFEstadoCuenta" method="generarPDFEstadoCuenta" class="ve.com.vbtonline.vista.action.mutualFunds.MutualFundsAction">
+            <result name="success" type="stream">
+                <param name="inputName">respuestaInputStream</param>
+                <param name="contentType">application/pdf</param>
+                <param name="contentDisposition">attachment;filename="EstadoCuenta.pdf"</param>
+                <param name="bufferSize">2048</param>
+            </result>
+        </action>
+
+        <!-- Add actions here -->
+    </package>
+</struts>
