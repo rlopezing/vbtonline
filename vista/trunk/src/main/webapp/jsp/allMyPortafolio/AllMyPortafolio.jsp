@@ -62,13 +62,19 @@
             </ul>
             <p id="TAG_INFO_PORTAFOLIO" class="banner__description banner__description--modifier">This option allows you to check balances of each of
                 your products with VBT Bank & Trust, grouped by portfolio number. To view the details of a specific product,
-                click on the code or name of the same.</p>
+                click on the code or name of the same.</p>                
+            <div id="ver_mas_todo_mi_portafolio" class="banner__description__show_more"><span>Ver más</span></div>
         </div>
     </div>
     <div class="bannerImgV2">
         <img src="../vbtonline/resources/img/bannerV2.png" alt=""/>
     </div>
 </div>
+
+<div id="dialog-description-show-more"  style="display:none">
+    <p></p>
+</div>
+
 <main class="main main--modifier">
     <div id="div_portafolio">
 
