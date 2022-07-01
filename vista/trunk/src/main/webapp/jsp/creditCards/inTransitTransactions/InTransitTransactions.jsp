@@ -598,6 +598,12 @@
                 </div>
             </div>
             <div class="section__content">
+
+                <div id="btn-notification-modal-bla" class="notice" style="justify-content: right;">
+                    <img class="notice__icon" src="../vbtonline/resources/img/icons/ic_login_security_tips.png"  alt=""/>
+                    <span id="transferencias_TAGNoticeBLA" class="notice__text">NOTICE</span>
+                </div>
+
                 <ul class="section__list">
                     <li id="comun_TAGAlertaTDCV1_3">
                         Visa will not call or e-mail you to request your personal
@@ -730,4 +736,71 @@
     </div>
 <%--    <jsp:include page="../../transfer-instructions.jsp" />--%>
 </main>
+
+
+<div class="notification-modal" id="notification-modal-bta">
+    <div class="notification-modal__top">
+        <img class="notification-modal__icon" src="../vbtonline/resources/img/icons/ic_home_info_notice.png"
+                                              alt=""/>
+        <span id="transferencias_TAGAvisosImportantes_1" class="notification-modal__title">IMPORTANT NOTICE</span></div>
+    <div class="notification-modal__content">
+        <div id="transferencias_TAGMsgDisclaimeEntrebancos_1" class="notification-modal__descriptions">
+        </div>
+        <div id="transferencias_TAGMsgDisclaimerExternas_1_Step_2" class="notification-modal__descriptions">
+        </div>
+        <div id="transferencias_TAGMsgDisclaimerExternas_1_Step_3" class="notification-modal__descriptions" style="display: none;">
+        </div>
+        <div class="notification-modal__greeting">
+            <span>Sincerely Yours</span>
+            <span class="notification-modal__vbt">VBT Bank & Trust, Ltd.</span>
+        </div>
+        <div class="notification-modal__spacebetween notification-modal__spacebetween--modifier">
+            <img class="notification-modal__logo" src="../vbtonline/resources/img/img__security_tips_vbt_seal_tan.png" alt=""/>
+            <div>
+                <a id="btn_TOB_volver_bt_2" class="notification-modal__button button-alternative" onclick="backStep2()" style="display: none;">Volver</a>
+                <a id="TagBtnCloseBMLA" class="notification-modal__button button-alternative" href="#close" rel="modal:close">Cerrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <%--<jsp:include page="../../footer.jsp" />--%>
+
+
+<script>
+    $("#btn-notification-modal-bla").click(function (){
+
+        $("#notification-modal-bta").modal({
+            showClose: !1,
+            modalClass: "notification-modal",
+            fadeDuration: 100,
+            blockerClass: "notification-modal--blocker",
+        });
+
+        let tipoOption = $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra3");
+        console.log('tipoOption',tipoOption);
+        $('#transferencias_TAGMsgDisclaimerExternas_1_Step_3').hide();
+
+        if(tipoOption == 'Venecredit Balanced Opportunity Fund'){
+            $('#transferencias_TAGMsgDisclaimeEntrebancos_1').hide();
+            $('#transferencias_TAGMsgDisclaimerExternas_1_Step_2').show();
+        }else{
+            $('#transferencias_TAGMsgDisclaimerExternas_1_Step_2').hide();
+            $('#transferencias_TAGMsgDisclaimeEntrebancos_1').show();
+        }
+    });
+
+    function goLink(){
+        $('#transferencias_TAGMsgDisclaimerExternas_1_Step_2').hide();
+        $('#transferencias_TAGMsgDisclaimerExternas_1_Step_3').show();
+        $('#btn_TOB_volver_bt_2').show();
+    }
+
+    function backStep2(){
+        $('#transferencias_TAGMsgDisclaimerExternas_1_Step_3').hide();
+        $('#btn_TOB_volver_bt_2').hide();
+        $('#transferencias_TAGMsgDisclaimerExternas_1_Step_2').show();
+    }
+
+    
+</script>
