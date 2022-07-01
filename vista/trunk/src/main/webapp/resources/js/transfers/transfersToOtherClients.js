@@ -223,6 +223,7 @@ $(document).ready(function(){
                             $("#ToOtherClient_Monto").addClass("error_campo");
                             invalido = "1";
                         }
+                        
                     } else {
                         if (Number(unFormatCurrency(montoAux, ',').replace(',', '.')) > Number(unFormatCurrency(parametros.vbt_mmto, ',').replace(',', '.'))) {
                             if (idioma == "_us_en") {
