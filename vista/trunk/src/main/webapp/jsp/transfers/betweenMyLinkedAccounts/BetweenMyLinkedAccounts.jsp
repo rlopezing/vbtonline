@@ -406,7 +406,7 @@
                         </div>
 
                         <div class="form-between__item form-between__item--col2" style="grid-column-end: 2;grid-column-start: 1;">
-                            <div style="display: flex;flex-direction: row;gap:1em;">
+                            <div style="display: flex;flex-direction: row;gap:1em;margin-bottom: 1em;">
                                 <div id="unidadesMostrar" class="checkbox-container">
                                     <label id="TAGUnidadesProd" class="checkbox-container__label" for="transferirUnidades">Unidades</label>
                                     <input id="transferirUnidades" class="checkbox-container__check" type="checkbox" />
@@ -417,10 +417,6 @@
                                 </div>
                             </div>
                             <div style="display: flex;flex-direction: row;gap:1em;">
-                                <div id="unitsBMLA" class="form-between__item" style="display: flex; flex-direction: column;">
-                                    <label id="transferencias_TAGUnits" class="form-between__label">Units</label>
-                                    <span id="cantidadUnidades"></span>
-                                </div>
                                 <div id="montoInputMostrarBMLA" class="form-between__item">
                                     <label id="transferencias_TAGMonto" class="form-between__label field-obligatory" for="BetweenLinkedAccounts_Monto">Amount</label>
                                     <input
@@ -446,6 +442,10 @@
                                             onkeypress="return onlyDigits_v2(event, this.value,true,true,true,',','.',2,'EM');"
                                             class="form-between__input input input--form invisible_print inputFormulario_BMLAVBT obligatorioCambioBMLA"
                                             />
+                                </div>
+                                <div id="unitsBMLA" class="form-between__item" style="display: flex; flex-direction: column;justify-content: center;">
+                                    <!-- <label id="transferencias_TAGUnits" class="form-between__label">Units</label> -->
+                                    <span id="cantidadUnidades"></span>
                                 </div>
                                 <div id="currencyBMLA" class="form-between__item">
                                     <label id="transferencias_TAGCurrency" class="form-between__label oculto">Currency</label>

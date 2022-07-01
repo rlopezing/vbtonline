@@ -425,15 +425,8 @@ $(document).ready(function(){
 
     $("#productCancelation").click(function () {
 
-        console.log('#####disclaimer-modal-transfers-others-client_v2');
-        $("#disclaimer-modal-transfers-others-client_v2").modal({
-            showClose: !1,
-            modalClass: "notification-modal",
-            fadeDuration: 100,
-            blockerClass: "notification-modal--blocker",
-        });
-
-/*         if ($("#productCancelation").prop('checked')) {
+         if ($("#productCancelation").prop('checked')) {
+            $("#BetweenLinkedAccounts_Motivo").val('');
             $("#motivoCancelacionProductoBMLA").show();
             $("#descripcionTransferenciaBMLA").hide();
             if ($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra3") != "Savings Account"){
@@ -482,10 +475,98 @@ $(document).ready(function(){
             $("#montoComisionBMLA").html(" ");
             cancelacion = "N";
             $("#BetweenLinkedAccounts_Monto").attr('readOnly',false);
-            $("#BMLA_Unidades").attr('readOnly',true);
+            $("#BMLA_Unidades").attr('readOnly',false);
             $("#motivoCancelacionProductoBMLA").hide();
             $("#descripcionTransferenciaBMLA").show();
-            $("#transferirMontoBMLA").prop("checked", true);
+            //$("#transferirMontoBMLA").prop("checked", true);
+
+            if ( ($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra3") != "Savings Account") ) {
+                if (($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra4")) == ($("#BetweenLinkedAccounts_NumCuentaDestino option:selected").attr("extra4"))) {
+                    $("#unidadesMostrar").show();
+                    $("#montoMostrarBMLA").show();
+                    $("#transferirMontoBMLA").show();
+                    //$("#transferirMontoBMLA").prop("checked", true);
+                } else {
+                    $("#unidadesMostrar").hide();
+                    $("#montoMostrarBMLA").hide();
+                }
+            }
+        } 
+
+        console.log('#####disclaimer-modal-transfers-others-client_v2');
+        $("#disclaimer-modal-transfers-others-client_v2").modal({
+            showClose: !1,
+            modalClass: "notification-modal",
+            fadeDuration: 100,
+            blockerClass: "notification-modal--blocker",
+        });
+
+    });
+
+    $("#btn_TOB_volver_bt_2_4_continuar_v2").click(function () {
+
+        $( "body" ).removeAttr( 'style' );
+        $('.notification-modal--blocker').hide();
+        $( "body" ).removeAttr( 'style' );
+
+    });
+
+    $("#btn_TOB_volver_bt_2_4_cancelar_v2").click(function () {
+
+        if (!($("#productCancelation").prop('checked'))) {
+            $("#productCancelation").prop('checked', true);
+            $("#motivoCancelacionProductoBMLA").show();
+            $("#descripcionTransferenciaBMLA").hide();
+            if ($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra3") != "Savings Account"){
+                if ($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra3")==$("#BetweenLinkedAccounts_NumCuentaDestino option:selected").attr("extra3")){
+                    $("#montoInputMostrarBMLA").hide();
+                    $("#unidadesInputOcultoBMLA").show();
+                    $("#unidadesMostrar").hide();
+                    $("#montoMostrarBMLA").hide();
+                    $("#transferirMontoBMLA").hide();
+                    $("#transferirMontoBMLA").prop("checked", false);
+                    $("#transferirUnidades").prop("checked", true);
+                    $("#BetweenLinkedAccounts_Monto").val(" ");
+                    montoBMLA = $("#BMLA_Unidades").val( $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra2") );
+                    montoBMLA = $("#BetweenLinkedAccounts_Monto").val(" ");
+
+                    if (idioma == "_us_en") {
+                        $("#cantidadUnidades").text("Units Available: " + " " + $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra2") );
+                        $("#cantidadUnidades").show();
+                    } else {
+                        $("#cantidadUnidades").text("Unidades Disponibles: " + " " + $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra2") );
+                        $("#cantidadUnidades").show();
+                    }
+                }else{
+                    montoBMLA = $("#BetweenLinkedAccounts_Monto").val(formatCurrency($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra"),true,2,'.'));
+                    montoBMLA = $("#BMLA_Unidades").val(" ");
+                    $("#montoComisionMostrarBMLA").hide();
+                    $("#montoComisionBMLA").html(" ");
+                }
+            }else{
+                calcularComisionCancelacion( $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra2"), $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra4"), $("#BetweenLinkedAccounts_Accounts option:selected").val().split(" |")[0], $("#BetweenLinkedAccounts_NumCuentaDestino option:selected").attr("valor"));
+
+                $("#transferirMontoBMLA").prop("checked", false);
+                $("#cantidadUnidades").hide();
+                $("#montoInputMostrarBMLA").show();
+                $("#unidadesInputOcultoBMLA").hide();
+                $("#BMLA_Unidades").val(" ");
+            }
+            cancelacion = "S";
+            $("#BetweenLinkedAccounts_Monto").attr('readOnly',true);
+            $("#BMLA_Unidades").attr('readOnly',true);
+        } else{
+            $("#productCancelation").prop('checked', false);
+            montoBMLA = $("#BetweenLinkedAccounts_Monto").val('');
+            montoBMLA = $("#BMLA_Unidades").val('');
+            $("#montoComisionMostrarBMLA").hide();
+            $("#montoComisionBMLA").html(" ");
+            cancelacion = "N";
+            $("#BetweenLinkedAccounts_Monto").attr('readOnly',false);
+            $("#BMLA_Unidades").attr('readOnly',false);
+            $("#motivoCancelacionProductoBMLA").hide();
+            $("#descripcionTransferenciaBMLA").show();
+            $("#transferirMontoBMLA").prop("checked", false);
 
             if ( ($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra3") != "Savings Account") ) {
                 if (($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra4")) == ($("#BetweenLinkedAccounts_NumCuentaDestino option:selected").attr("extra4"))) {
@@ -498,112 +579,10 @@ $(document).ready(function(){
                     $("#montoMostrarBMLA").hide();
                 }
             }
-        } */
-
-    });
-
-    $("#btn_TOB_volver_bt_2_4_continuar_v2").click(function () {
-        $("#motivoCancelacionProductoBMLA").show();
-        $("#descripcionTransferenciaBMLA").hide();
-        if ($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra3") != "Savings Account"){
-            if ($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra3")==$("#BetweenLinkedAccounts_NumCuentaDestino option:selected").attr("extra3")){
-                $("#montoInputMostrarBMLA").hide();
-                $("#unidadesInputOcultoBMLA").show();
-                $("#unidadesMostrar").hide();
-                $("#montoMostrarBMLA").hide();
-                $("#transferirMontoBMLA").hide();
-                $("#transferirMontoBMLA").prop("checked", false);
-                $("#transferirUnidades").prop("checked", true);
-                $("#BetweenLinkedAccounts_Monto").val(" ");
-                montoBMLA = $("#BMLA_Unidades").val( $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra2") );
-                montoBMLA = $("#BetweenLinkedAccounts_Monto").val(" ");
-
-                if (idioma == "_us_en") {
-                    $("#cantidadUnidades").text("Units Available: " + " " + $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra2") );
-                    $("#cantidadUnidades").show();
-                } else {
-                    $("#cantidadUnidades").text("Unidades Disponibles: " + " " + $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra2") );
-                    $("#cantidadUnidades").show();
-                }
-            }else{
-                montoBMLA = $("#BetweenLinkedAccounts_Monto").val(formatCurrency($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra"),true,2,'.'));
-                montoBMLA = $("#BMLA_Unidades").val(" ");
-                $("#montoComisionMostrarBMLA").hide();
-                $("#montoComisionBMLA").html(" ");
-            }
-        }else{
-            calcularComisionCancelacion( $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra2"), $("#BetweenLinkedAccounts_Accounts option:selected").attr("extra4"), $("#BetweenLinkedAccounts_Accounts option:selected").val().split(" |")[0], $("#BetweenLinkedAccounts_NumCuentaDestino option:selected").attr("valor"));
-
-            $("#transferirMontoBMLA").prop("checked", false);
-            $("#cantidadUnidades").hide();
-            $("#montoInputMostrarBMLA").show();
-            $("#unidadesInputOcultoBMLA").hide();
-            $("#BMLA_Unidades").val(" ");
-        }
-        cancelacion = "S";
-        $("#BetweenLinkedAccounts_Monto").attr('readOnly',true);
-        $("#BMLA_Unidades").attr('readOnly',true);
-
-        $("#productCancelation").prop('checked', true);
-
-     //   $('.blocker').remove();
-      //  $(".modal-backdrop").hide(); 
-        
-      //  $('#disclaimer-modal-transfers-others-client').modal('hide');
-
-        //$('#disclaimer-modal-transfers-others-client').hide();
+        } 
+      
         $( "body" ).removeAttr( 'style' );
         $('.notification-modal--blocker').hide();
-        $( "body" ).removeAttr( 'style' );
-
-    });
-
-    $("#btn_TOB_volver_bt_2_4_cancelar_v2").click(function () {
-        $("#productCancelation").prop('checked', false);
-        montoBMLA = $("#BetweenLinkedAccounts_Monto").val('');
-        montoBMLA = $("#BMLA_Unidades").val('');
-        $("#montoComisionMostrarBMLA").hide();
-        $("#montoComisionBMLA").html(" ");
-        cancelacion = "N";
-        $("#BetweenLinkedAccounts_Monto").attr('readOnly',false);
-        $("#BMLA_Unidades").attr('readOnly',true);
-        $("#motivoCancelacionProductoBMLA").hide();
-        $("#descripcionTransferenciaBMLA").show();
-        $("#transferirMontoBMLA").prop("checked", true);
-
-        $("#BetweenLinkedAccounts_Motivo").val('');
-        $("#BetweenLinkedAccounts_Motivo").text('');
-        $("#transferirUnidades").prop("checked", false);
-        $("#BetweenLinkedAccounts_NumCuentaDestino").val('');
-
-
-
-        if ( ($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra3") != "Savings Account") ) {
-            if (($("#BetweenLinkedAccounts_Accounts option:selected").attr("extra4")) == ($("#BetweenLinkedAccounts_NumCuentaDestino option:selected").attr("extra4"))) {
-                $("#unidadesMostrar").show();
-                $("#montoMostrarBMLA").show();
-                $("#transferirMontoBMLA").show();
-                $("#transferirMontoBMLA").prop("checked", true);
-            } else {
-                $("#unidadesMostrar").hide();
-                $("#montoMostrarBMLA").hide();
-            }
-        }
-
-        procancelTOC = "S";
-        $( "body" ).removeAttr( 'style' );
-        $("#productCancelation").prop('checked', false);
-        $( "body" ).removeAttr( 'style' );
-
-
-      //  $('.blocker').remove();
-       // $(".modal-backdrop").hide(); 
-
-       // $('#disclaimer-modal-transfers-others-client').modal('hide');
-
-       //$('#disclaimer-modal-transfers-others-client').hide();
-        $('.notification-modal--blocker').hide();
-
     });
 
     $("#unidadesMostrar").hide();
