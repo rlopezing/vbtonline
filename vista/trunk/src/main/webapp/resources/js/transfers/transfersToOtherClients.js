@@ -133,9 +133,9 @@ $(document).ready(function(){
 
             if (Number(unFormatCurrency(montoAux, ',').replace(',', '.')) > $("#ToOtherClient_Accounts option:selected").attr("extra")) {
                 if (idioma == "_us_en") {
-                    mensaje = mensaje + "The amount exceeds the maximum available in your account " + $("#ToOtherClient_Accounts option:selected").attr("extra") + "." + "<br>";
+                    mensaje = mensaje + "The amount exceeds the maximum available in your account " + currencyFormat($("#ToOtherClient_Accounts option:selected").attr("extra")) + $("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
                 } else {
-                    mensaje = mensaje + "El monto excede el maximo disponible de su cuenta " + $("#ToOtherClient_Accounts option:selected").attr("extra") + "." + "<br>";
+                    mensaje = mensaje + "El monto excede el maximo disponible de su cuenta " + currencyFormat($("#ToOtherClient_Accounts option:selected").attr("extra")) + $("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
                 }
 
             }
@@ -154,9 +154,9 @@ $(document).ready(function(){
             if ($("#ToOtherClient_Producto option:selected").attr("extra") == "S") {
                 if ((Number(unFormatCurrency(montoAux, ',').replace(',', '.')) < Number(unFormatCurrency(parametros.vbt_mminto, ',').replace(',', '.')))) {
                     if (idioma == "_us_en")
-                        mensaje = mensaje + "Invalid amount. Please enter an Amount equal or greater of " + parametros.vbt_mminto + "." + "<br>";
+                        mensaje = mensaje + "Invalid amount. Please enter an Amount equal or greater of " + currencyFormat(parametros.vbt_mminto)+ " " + $("#ToOtherClient_Producto option:selected").attr("extra1") + "." + "<br>";
                     else
-                        mensaje = mensaje + "Monto inv&aacute;lido. Por favor introduzca un valor mayor o igual a " + parametros.vbt_mminto + "." + "<br>";
+                        mensaje = mensaje + "Monto inv&aacute;lido. Por favor introduzca un valor mayor o igual a " + currencyFormat(parametros.vbt_mminto)+ " " + $("#ToOtherClient_Producto option:selected").attr("extra1") + "." + "<br>";
                     $("#ToOtherClient_Monto").addClass("error_campo");
                     invalido = "1";
                 }
@@ -164,18 +164,18 @@ $(document).ready(function(){
                 if ($("#ToOtherClient_Accounts option:selected").attr("valor") != $("#ToOtherClient_Producto option:selected").attr("extra3")) {
                     if (Number(unFormatCurrency(montoAux, ',').replace(',', '.')) < Number(unFormatCurrency(parametros.vbt_mminto, ',').replace(',', '.'))) {
                         if (idioma == "_us_en")
-                            mensaje = mensaje + "Invalid amount. Please enter an Amount equal or greater of " + parametros.vbt_mminto + " " + $("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
+                            mensaje = mensaje + "Invalid amount. Please enter an Amount equal or greater of " + currencyFormat(parametros.vbt_mminto)+ " " + $("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
                         else
-                            mensaje = mensaje + "Monto inv&aacute;lido. Por favor introduzca un valor mayor o igual a " + parametros.vbt_mminto + " " + $("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
+                            mensaje = mensaje + "Monto inv&aacute;lido. Por favor introduzca un valor mayor o igual a " + currencyFormat(parametros.vbt_mminto)+ " " + $("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
                         $("#ToOtherClient_Monto").addClass("error_campo");
                     }
                 } else {
                     if ($("#transferirMontoOtrosClientes").prop("checked")) {
                         if (Number(unFormatCurrency(montoAux, ',').replace(',', '.')) < Number(unFormatCurrency(parametros.vbt_mminto, ',').replace(',', '.'))) {
                             if (idioma == "_us_en")
-                                mensaje = mensaje + "Invalid amount. Please enter an Amount equal or greater of " + parametros.vbt_mminto + " " + $("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
+                                mensaje = mensaje + "Invalid amount. Please enter an Amount equal or greater of " + currencyFormat(parametros.vbt_mminto)+ " " + $("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
                             else
-                                mensaje = mensaje + "Monto inv&aacute;lido. Por favor introduzca un valor mayor o igual a " + parametros.vbt_mminto + " " + $("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
+                                mensaje = mensaje + "Monto inv&aacute;lido. Por favor introduzca un valor mayor o igual a " + currencyFormat(parametros.vbt_mminto)+ " " + $("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
                             $("#ToOtherClient_Monto").addClass("error_campo");
                         }
                     } else {
@@ -210,25 +210,26 @@ $(document).ready(function(){
                         if (Number(unFormatCurrency(montoAux, ',').replace(',', '.')) > Number(unFormatCurrency(parametros.vbt_mmaxtd, ',').replace(',', '.')) || Number(unFormatCurrency(montoAux, ',').replace(',', '.')) > Number(unFormatCurrency(parametros.vbt_mmto, ',').replace(',', '.'))) {
                             if (idioma == "_us_en") {
                                 if (Number(unFormatCurrency(montoAux, ',').replace(',', '.')) > Number(unFormatCurrency(parametros.vbt_mmto, ',').replace(',', '.')))
-                                    mensaje = mensaje + "The amount exceeds the maximum of USD " + parametros.vbt_mmto + "." + "<br>";
+                                    mensaje = mensaje + "The amount exceeds the maximum of " + parametros.vbt_mmto + $("#ToOtherClient_Producto option:selected").attr("extra1") +"." + "<br>";
                                 else
-                                    mensaje = mensaje + "The amount exceeds the maximum of USD " + parametros.vbt_mmaxtd + "." + "<br>";
+                                    mensaje = mensaje + "The amount exceeds the maximum of " + parametros.vbt_mmaxtd + $("#ToOtherClient_Producto option:selected").attr("extra1") + "." + "<br>";
                             } else {
                                 if (Number(unFormatCurrency(montoAux, ',').replace(',', '.')) > Number(unFormatCurrency(parametros.vbt_mmto, ',').replace(',', '.')))
-                                    mensaje = mensaje + "Monto m&aacute;ximo permitido por transferencia excedido (M&aacute;x. USD " + parametros.vbt_mmto + ")." + "<br>";
+                                    mensaje = mensaje + "Monto m&aacute;ximo permitido por transferencia excedido " + parametros.vbt_mmto +$("#ToOtherClient_Producto option:selected").attr("extra1")+  "." + "<br>";
                                 else
-                                    mensaje = mensaje + "Monto m&aacute;ximo permitido por transferencia excedido (M&aacute;x. USD " + parametros.vbt_mmaxtd + ")." + "<br>";
+                                    mensaje = mensaje + "Monto m&aacute;ximo permitido por transferencia excedido " + parametros.vbt_mmaxtd +$("#ToOtherClient_Producto option:selected").attr("extra1") + "." + "<br>";
                             }
 
                             $("#ToOtherClient_Monto").addClass("error_campo");
                             invalido = "1";
                         }
+                        
                     } else {
                         if (Number(unFormatCurrency(montoAux, ',').replace(',', '.')) > Number(unFormatCurrency(parametros.vbt_mmto, ',').replace(',', '.'))) {
                             if (idioma == "_us_en") {
-                                mensaje = mensaje + "The amount exceeds the maximum of USD " + parametros.vbt_mmto + "." + "<br>";
+                                mensaje = mensaje + "The amount exceeds the maximum of " + parametros.vbt_mmto + $("#ToOtherClient_Producto option:selected").attr("extra1") +"." + "<br>";
                             } else {
-                                mensaje = mensaje + "Monto m&aacute;ximo permitido por transferencia excedido (M&aacute;x. USD " + parametros.vbt_mmto + ")." + "<br>";
+                                mensaje = mensaje + "Monto m&aacute;ximo permitido por transferencia excedido " + parametros.vbt_mmaxtd +$("#ToOtherClient_Producto option:selected").attr("extra1") + "." + "<br>";
                             }
 
                             $("#ToOtherClient_Monto").addClass("error_campo");
@@ -247,9 +248,9 @@ $(document).ready(function(){
                     montoOrigen = Number(unFormatCurrency($('#ToOtherClient_Accounts :selected').attr("extra")));
                     if ((montoOrigen - Number(unFormatCurrency(montoAux, ',').replace(',', '.')) < parametros.minimun_balance)) {
                         if (idioma == "_us_en") {
-                            mensaje = mensaje + "The amount exceeds the minimun of USD in account " + formatMoneda(parametros.minimun_balance) + "<br>";
+                            mensaje = mensaje + "The amount exceeds the minimun of " + formatMoneda(parametros.minimun_balance) + $("#ToOtherClient_Accounts option:selected").attr("extra1") +"." + "<br>";
                         } else {
-                            mensaje = mensaje + "Monto m&iacute;nimo en cuenta excedido (M&iacute;n. USD " + formatMoneda(parametros.minimun_balance) + ")" + "<br>";
+                            mensaje = mensaje + "Monto m&iacute;nimo en cuenta excedido " + formatMoneda(parametros.minimun_balance) +$("#ToOtherClient_Accounts option:selected").attr("extra1") + "." + "<br>";
                         }
                     }
                 }
