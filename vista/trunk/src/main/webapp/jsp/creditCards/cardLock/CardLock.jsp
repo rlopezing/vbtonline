@@ -367,11 +367,16 @@
                 Security advises to avoid frauds. Please read carefully the
                 following information.
             </p>
+            <div id="ver_mas_tarjeta_activacion" class="banner__description__show_more"><span>Ver más</span></div>
         </div>
     </div>
     <div class="bannerImgV2">
         <img src="../vbtonline/resources/img/bannerV2.png" alt=""/>
     </div>
+</div>
+
+<div id="dialog-description-show-more"  style="display:none">
+    <p></p>
 </div>
 <main class="main main--modifier">
     <div id="div_creditCard_CL_alertaSeguridad"class="section">
