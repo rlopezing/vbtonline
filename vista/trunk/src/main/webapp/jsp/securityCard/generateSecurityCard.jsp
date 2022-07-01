@@ -154,12 +154,18 @@
                 transactions: transfers to other banks, affiliation of transfer
                 destination, updating of personal settings, etc.
             </p>
+            <div id="ver_mas_tarjeta_coordenada" class="banner__description__show_more"><span>Ver más</span></div>
         </div>
     </div>
     <div class="bannerImgV2">
         <img src="../vbtonline/resources/img/bannerV2.png" alt=""/>
     </div>
 </div>
+
+<div id="dialog-description-show-more"  style="display:none">
+    <p></p>
+</div>
+
 <main class="main main--modifier">
     <div class="options">
         <div class="options__container container">

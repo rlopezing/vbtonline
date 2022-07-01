@@ -540,7 +540,8 @@
                     </div>
                     <div id="botonVolverPortafolioCC" class="section__buttons">
                         <input type="button" id="btnVolverPortafolioCC" value="Volver" class="section__button button button--white oculto">
-                    </div>
+                    </div>                    
+                    <img id="transit_imprimir" onclick="javascript:crearPDF_accountStatement_TDC()" class="section__icon" src="../vbtonline/resources/img/icons/ic_table_header_print.png" alt="" />
                 </div>
                 <div class="section__row section__row--spacebetween">
                     <div class="section__form">
@@ -557,7 +558,6 @@
                         </div>
                     </div>
                     <div class="section__buttons">
-                        <button style="display: none" class="section__button button button--white" id="estado_cuenta_TDC_imprimir" title="Print" onclick="javascript:crearPDF_accountStatement_TDC()">Consult</button>
                         <button class="section__button button" id="consulta_TDC_AE">Consult</button>
                     </div>
                 </div>
