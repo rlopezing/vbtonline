@@ -364,7 +364,7 @@ function CardLockTDCInfoPaginaJSONData(){
     $("#fec_hasta_CL").val("");
     $("#tabla_consulta_reglas_activas_TDC_CL").empty();
     $("#tabla_consulta_historial_TDC_CL").empty();
-    $("#div_creditCard_CL_Edit").attr("style", "display: none");
+    //$("#div_creditCard_CL_Edit").attr("style", "display: none");
 //    $("#div_creditCard_CL_Edit").addClass("oculto");
     $("#set_tabla_consulta_reglas_activas_TDC_CL").addClass("oculto");
     $("#set_tabla_consulta_historial_TDC_CL").addClass("oculto");

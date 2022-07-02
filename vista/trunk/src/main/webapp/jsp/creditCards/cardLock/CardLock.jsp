@@ -381,114 +381,6 @@
 <main class="main main--modifier">
     <div id="div_creditCard_CL_alertaSeguridad"class="section">
         <div id="alertaSeguridadTDC" class="section__container container">
-            <div class="section__top">
-                <img
-                        class="section__icon"
-                        src="../vbtonline/resources/img/icons/ic_login_security_tips.png"
-                        alt=""
-                />
-                <div class="section__header">
-                    <span class="section__title">Tips</span>
-                </div>
-            </div>
-            <div class="section__content">
-                <ul class="section__list">
-                    <li id="comun_TAGAlertaTDCV1_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV2_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV3_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV4_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV5_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV6_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV7_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV8_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV9_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV10_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV11_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV12_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV13_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV14_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV15_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV16_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV17_4">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls.
-                    </li>
-                </ul>
-                <input type="hidden" id="pantalla" value="div_creditCard_CL">
-                <div class="table__spacebetween table__spacebetween--margin">
-                    <span class="table__mandaroty"></span>
-                    <div class="table__buttons">
-                        <button id="comun_TAGTitleContinuarTDC3" class="table__button button" >
-                            Click to Continue
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div id="div_creditCard_CL" style="display: none" class="section">
@@ -553,7 +445,7 @@
             </div>
         </div>
     </div>
-    <div id="div_creditCard_CL_Edit" style="display: none" class="section">
+    <div id="div_creditCard_CL_Edit" class="section">
         <div class="section__container container">
             <div class="section__top">
                 <img class="section__icon" src="../vbtonline/resources/img/icons/ic_dpdown_creditcards.png" alt="" />
@@ -565,6 +457,11 @@
                 </div>
             </div>
             <div class="section__content">
+                
+                <div id="btn-notification-modal-cc-sa" class="notice" style="justify-content: right;">
+                    <img class="notice__icon" src="../vbtonline/resources/img/icons/ic_login_security_tips.png" alt="" />
+                    <span id="transferencias_TAGNoticeBLA" class="notice__text">TIPS</span>
+                </div>
                 <div class="form-filter">
                     <div class="form-filter__grid">
                         <div class="form-filter__item">
@@ -592,6 +489,73 @@
             </div>
         </div>
     </div>
+
+    <div class="notification-modal" id="notification-modal-cc-sa">
+        <div class="notification-modal__top">
+            <img class="notification-modal__icon" src="../vbtonline/resources/img/icons/ic_login_security_tips.png"
+                                                  alt=""/>
+            <span id="tag_title_tips_credit_card" class="notification-modal__title">TIPS</span></div>
+        <div class="notification-modal__content">
+                         
+            <ul class="section__list">
+                <li id="comun_TAGAlertaTDCV1_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV2_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV3_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV4_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV5_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV6_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV7_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV8_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV9_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV10_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV11_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV12_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV13_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV14_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV15_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV16_4">                    
+                </li>
+                <li id="comun_TAGAlertaTDCV17_4">                    
+                </li>
+            </ul>
+            <div class="notification-modal__spacebetween notification-modal__spacebetween--modifier">
+                <img class="notification-modal__logo" src="../vbtonline/resources/img/img__security_tips_vbt_seal_tan.png" alt=""/>
+                <div>
+                    <a id="TagBtnCloseSA" class="notification-modal__button button-alternative" href="#close" rel="modal:close">Cerrar</a>
+                </div>
+            </div>
+        </div>
+    </div>
 <%--    <jsp:include page="../../transfer-instructions.jsp" />--%>
 </main>
 <%--<jsp:include page="../../footer.jsp" />--%>
+
+<script>
+    $("#btn-notification-modal-cc-sa").click(function (){
+
+        $("#notification-modal-cc-sa").modal({
+            showClose: !1,
+            modalClass: "notification-modal",
+            fadeDuration: 100,
+            blockerClass: "notification-modal--blocker",
+        });
+
+
+
+    });    
+</script>

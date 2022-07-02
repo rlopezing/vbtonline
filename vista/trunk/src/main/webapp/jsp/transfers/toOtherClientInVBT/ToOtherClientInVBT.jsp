@@ -528,7 +528,6 @@
                                    maxlength="25"
                                    size="15"
                                    type="text"/>
-                                   <label id="cantidadUnidadesOtrosClientes" class="datos negrita">unidades mostradas</label>
                         </div>
                         <div id="montoComisionMostrarTOC" class="form-filter__item">
                             <label id="transferencias_TAGmontoComision" class="form-filter__label">Comision</label>

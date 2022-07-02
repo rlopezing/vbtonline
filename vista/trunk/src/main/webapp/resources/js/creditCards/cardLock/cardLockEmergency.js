@@ -124,7 +124,7 @@ function CardLockETDCInfoSuccess(originalRequest){
     if(codigo=="0" && tarjetasCLE!=null){
         $("#alertaSeguridadTDC #pantalla").val("div_creditCard_CLE");
         $("#div_creditCard_CLE_alertaSeguridad").attr("style", "display: ");
-        $("#div_creditCard_CLE").attr("style", "display: none");
+       // $("#div_creditCard_CLE").attr("style", "display: none");
         $("#div_noInfo_CLE_creditCard").attr("style", "display: none");
 
         if(idioma=="_us_en")
@@ -136,7 +136,7 @@ function CardLockETDCInfoSuccess(originalRequest){
         $('#numero_cuenta_TDC_CLE').trigger("chosen:updated");
     }else{
         $("#div_creditCard_CLE_alertaSeguridad").attr("style", "display: none");
-        $("#div_creditCard_CLE").attr("style", "display: none");
+        //$("#div_creditCard_CLE").attr("style", "display: none");
         $("#div_noInfo_CLE_creditCard").attr("style", "display: ");
     }
     $("#numero_cuenta_TDC_CLE").chosen({ search_contains: true });

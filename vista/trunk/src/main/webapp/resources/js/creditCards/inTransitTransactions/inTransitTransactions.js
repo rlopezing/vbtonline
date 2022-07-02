@@ -60,7 +60,7 @@ function InTransitTransactionsTDCInfoPaginaJSONData(){
 
     $("#alertaSeguridadTDC #pantalla").val("div_creditCard_ITT");
     $("#div_creditCard_ITT_alertaSeguridad").attr("style", "display: ");
-    $("#div_creditCard_ITT").attr("style", "display: none");
+    //$("#div_creditCard_ITT").attr("style", "display: none");
     $("#div_noInfo_ITT_creditCard").attr("style", "display: none");
 
 
@@ -82,7 +82,7 @@ function InTransitTransactionsTDCInfoSuccess(originalRequest){
     if(codigo=="0" && tarjetasITT!=null){
         $("#alertaSeguridadTDC #pantalla").val("div_creditCard_ITT");
         $("#div_creditCard_ITT_alertaSeguridad").attr("style", "display: ");
-        $("#div_creditCard_ITT").attr("style", "display: none");
+        //$("#div_creditCard_ITT").attr("style", "display: none");
         $("#div_noInfo_ITT_creditCard").attr("style", "display: none");
         if(idioma=="_us_en")
           cargar_selectPersonal("numero_cuenta_TDC_ITT", tarjetasITT,"Select","-2");
@@ -91,7 +91,7 @@ function InTransitTransactionsTDCInfoSuccess(originalRequest){
 
     }else{
         $("#div_creditCard_ITT_alertaSeguridad").attr("style", "display: none");
-        $("#div_creditCard_ITT").attr("style", "display: none");
+        //$("#div_creditCard_ITT").attr("style", "display: none");
         //TODO:MAPEAR CUANDO NO HAY DATA
         $("#div_noInfo_ITT_creditCard").attr("style", "display: ");
     }

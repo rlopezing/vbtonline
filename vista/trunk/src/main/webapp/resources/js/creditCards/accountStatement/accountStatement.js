@@ -129,7 +129,7 @@ function AccountStatementTDCInfoSuccess(originalRequest){
         $("#alertaSeguridadTDC #pantalla").val("div_creditCard_AE");
         $("#div_creditCard_AE_alertaSeguridad").attr("style", "display: ");
         $("#div_noInfo_accountStatement_creditCard").attr("style", "display: none");
-        $("#div_creditCard_AE").attr("style", "display: none");
+        //$("#div_creditCard_AE").attr("style", "display: none");
         $("#estado_cuenta_TDC_imprimir").fadeOut("fast");
         $("#numero_cuenta_TDC_AE").removeClass("error_campo");
         $("#btnVolverPortafolioCC").addClass("oculto");
@@ -144,7 +144,7 @@ function AccountStatementTDCInfoSuccess(originalRequest){
                 cargar_selectPersonal("numero_cuenta_TDC_AE", tarjetas,"Seleccione","-2");
     }else{
         $("#div_creditCard_AE_alertaSeguridad").attr("style", "display: none");
-        $("#div_creditCard_AE").attr("style", "display: none");
+        //$("#div_creditCard_AE").attr("style", "display: none");
         $("#div_noInfo_accountStatement_creditCard").attr("style", "display: ");
     }
 

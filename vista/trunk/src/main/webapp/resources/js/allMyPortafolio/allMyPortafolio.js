@@ -683,7 +683,7 @@ function BTTDCFromPortafolioInfoSuccess(originalRequest){
         $("#alertaSeguridadTDC #pantalla").val("div_creditCard_AE");
         $("#div_creditCard_AE_alertaSeguridad").attr("style", "display: ");
         $("#div_noInfo_accountStatement_creditCard").attr("style", "display: none");
-        $("#div_creditCard_AE").attr("style", "display: none");
+        //$("#div_creditCard_AE").attr("style", "display: none");
         $("#estado_cuenta_TDC_imprimir").fadeOut("fast");
         $("#numero_cuenta_TDC_AE").removeClass("error_campo");
         $("#btnVolverPortafolioCC").removeClass("oculto");
@@ -702,7 +702,7 @@ function BTTDCFromPortafolioInfoSuccess(originalRequest){
         $("#consulta_TDC_AE").click();
     }else{
         $("#div_creditCard_AE_alertaSeguridad").attr("style", "display: none");
-        $("#div_creditCard_AE").attr("style", "display: none");
+        //$("#div_creditCard_AE").attr("style", "display: none");
         $("#div_noInfo_accountStatement_creditCard").attr("style", "display: ");
     }
 

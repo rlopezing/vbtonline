@@ -263,107 +263,12 @@
                 </div>
             </div>
             <div class="section__content">
-                <ul class="section__list">
-                    <li id="comun_TAGAlertaTDCV1_2">
-                        Visa will not call or e-mail you to request your personal
-                        account information. Visa call centers do not initiate outbound
-                        telemarketing calls. Consumers should not respond to any e-mails
-                        or phone calls with requests for any personal card information
-                        and are advised to immediately report the situation to local law
-                        enforcement as well as the financial institution that issued
-                        their card.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV2_2">
-                        The Cardholder will be liable to "The Bank" for failing to
-                        report unauthorized use of the Card. As soon as the Cardholder
-                        gives proper notice to "The Bank", liability for subsequent
-                        unauthorized sales and cash advances may cease.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV3_2">
-                        The Cardholder is solely responsible for the correct use of the
-                        Card. The Cardholder assumes responsibilities for all charges
-                        and fees derived for the correct use of the Card. Any misuse of
-                        the Card will be the sole responsibility of the Cardholder.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV4_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media) is the
-                        main risk the cardholder faces when using the card. The
-                        appropriation of the card by third parties facilitating its
-                        misuse may cause damage to one or more subjects participating in
-                        the credit card system (e. g. users, participating
-                        establishments and issuer). The repair of such damage arising
-                        from breach of your obligation/responsibility as cardholder to
-                        prevent such damages can result in liability claims to you as
-                        cardholder.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV5_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV6_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV7_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV8_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV9_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV10_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV11_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV12_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV13_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV14_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV15_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV16_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                    <li id="comun_TAGAlertaTDCV17_2">
-                        The use of your credit card by unauthorized third parties (e.g.
-                        due to loss, theft, forgery or use of data of the credit card
-                        while cardholder uses card online or in digital media.
-                    </li>
-                </ul>
+                
+                <div id="btn-notification-modal-cc-cm" class="notice" style="justify-content: right;">
+                    <img class="notice__icon" src="../vbtonline/resources/img/icons/ic_login_security_tips.png" alt="" />
+                    <span id="transferencias_TAGNoticeBLA" class="notice__text">TIPS</span>
+                </div>
+                
                 <input type="hidden" id="pantalla" value="div_gestionReclamos">
                 <div class="table__spacebetween table__spacebetween--margin">
                     <span class="table__mandaroty"></span>
@@ -376,6 +281,74 @@
             </div>
         </div>
     </div>
+
+    <div class="notification-modal" id="notification-modal-cc-cm">
+        <div class="notification-modal__top">
+            <img class="notification-modal__icon" src="../vbtonline/resources/img/icons/ic_login_security_tips.png"
+                                                  alt=""/>
+            <span id="tag_title_tips_credit_card" class="notification-modal__title">TIPS</span></div>
+        <div class="notification-modal__content">
+            <ul class="section__list">
+                <li id="comun_TAGAlertaTDCV1_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV2_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV3_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV4_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV5_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV6_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV7_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV8_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV9_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV10_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV11_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV12_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV13_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV14_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV15_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV16_2">
+                </li>
+                <li id="comun_TAGAlertaTDCV17_2">
+                </li>
+            </ul>
+                
+        <div class="notification-modal__spacebetween notification-modal__spacebetween--modifier">
+            <img class="notification-modal__logo" src="../vbtonline/resources/img/img__security_tips_vbt_seal_tan.png" alt=""/>
+            <div>
+                <a id="TagBtnCloseCM" class="notification-modal__button button-alternative" href="#close" rel="modal:close">Cerrar</a>
+            </div>
+        </div>
+        </div>
+    </div>
 <%--    <jsp:include page="../../transfer-instructions.jsp" />--%>
 </main>
 <%--<jsp:include page="../../footer.jsp" />--%>
+
+
+<script>
+    $("#btn-notification-modal-cc-cm").click(function (){
+
+        $("#notification-modal-cc-cm").modal({
+            showClose: !1,
+            modalClass: "notification-modal",
+            fadeDuration: 100,
+            blockerClass: "notification-modal--blocker",
+        });
+
+
+
+    });    
+</script>
