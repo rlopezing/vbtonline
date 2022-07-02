@@ -206,7 +206,7 @@
                 </li>
                 <li id="CC_PC_tag_ling_credit_card_payment">CREDIT CARD PAYMENT</li>
             </ul>
-            <p id="TAG_INFO_TDC_PAGOS" class="banner__description banner__description--modifier" >
+            <p id="TAG_INFO_TDC_PAGOS1" class="banner__description banner__description--modifier" >
                 This option allows you to view the details of all payments made through VBT Online.
             </p>
             <div id="ver_mas_payment_history" class="banner__description__show_more"><span>Ver más</span></div>
@@ -234,7 +234,8 @@
             <p id="TAG_INFO_TDC_PAGOS" class="banner__description banner__description--modifier" >
                 This option allows you to view the details of all payments made through VBT Online.
             </p>
-            <div id="ver_mas_payment_history" class="banner__description__show_more"><span>Ver más</span></div>
+            <div id="ver_mas_credi_card_payment" class="banner__description__show_more"><span>Ver más</span></div>
+
         </div>
     </div>
     <div class="bannerImgV2">

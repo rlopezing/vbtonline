@@ -2236,8 +2236,8 @@ button {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+   /* -ms-flex-direction: column;
+    flex-direction: column;*/
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -2271,7 +2271,7 @@ button {
     overflow-wrap: normal;
 }
 .table__item--last {
-    margin-left: auto;
+    /*margin-left: auto;*/
 }
 .table__item--col2 {
     display: -ms-grid;
