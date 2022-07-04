@@ -156,12 +156,6 @@
         <img class="header__mark" src="../vbtonline/resources/img/mark.svg" alt="mark icon svg" />
         <div class="header__general">
             <ul class="general-menu container" id="general-menu">
-<%--                <li class="general-menu__item" class="general-menu__item">
-                    <a class="general-menu__link" href="#">INFO</a>
-                </li>
-                <li class="general-menu__item">
-                    <a class="general-menu__link" href="portfolio.html">ALL MY PORTFOLIO</a>
-                </li>--%>
                 <li class="header__languages">
                     <img id="idioma_es_home" src="resources/images/flag_espanol.png" class="seleccionIdioma" alt="">
                     <img id="idioma_en_home" src="resources/images/flag_ingles.png" class="seleccionIdioma current_seleccionIdioma" alt="">
@@ -208,11 +202,18 @@
         $(document).ready(function () {
             const btnMenu = document.getElementById("icon-menu");
             const menu = document.getElementById("menu");
+            const btnSubMenuDatos = document.getElementById("TAGTitleMisDatos");
+            const btnSubMenuSalir = document.getElementById("menu_TAGTitleSalir");
 
             btnMenu.addEventListener("click", () => {
                 menu.classList.toggle("header__content--active");
             });
-
+            btnSubMenuDatos.addEventListener("click", () => {
+                menu.classList.toggle("header__content--active");
+            });
+            btnSubMenuSalir.addEventListener("click", () => {
+                menu.classList.toggle("header__content--active");
+            });
         });
     </script>
 </header>
